@@ -1,0 +1,827 @@
+<?xml version="1.0" encoding="windows-1254"?>
+<timetable ascttversion="2020.8.7" importtype="database" options="export:idprefix:%CHRID,import:idprefix:%TEMPID,groupstype1,decimalseparatordot,lessonsincludeclasseswithoutstudents,handlestudentsafterlessons" defaultexport="1" displayname="aSc Timetables 2012 XML" displaycountries="">
+   <periods options="canadd,export:silent" columns="period,name,short,starttime,endtime">
+      <period name="1.Ders" short="1" period="1" starttime="8:10" endtime="8:50"/>
+      <period name="2.Ders" short="2" period="2" starttime="8:50" endtime="9:30"/>
+      <period name="3.Ders" short="3" period="3" starttime="9:45" endtime="10:25"/>
+      <period name="4.Ders" short="4" period="4" starttime="10:25" endtime="11:05"/>
+      <period name="5.Ders" short="5" period="5" starttime="11:05" endtime="11:45"/>
+      <period name="6.Ders" short="6" period="6" starttime="12:00" endtime="12:40"/>
+      <period name="7.Ders" short="7" period="7" starttime="12:40" endtime="13:20"/>
+      <period name="8.Ders" short="8" period="8" starttime="14:20" endtime="15:05"/>
+      <period name="9.Ders" short="9" period="9" starttime="14:05" endtime="15:45"/>
+   </periods>
+   <daysdefs options="canadd,export:silent" columns="id,days,name,short">
+      <daysdef id="28AFED9569CFDA32" name="Herhangi Bir Gün" short="X" days="10000,01000,00100,00010,00001"/>
+      <daysdef id="DB7E1651C6369084" name="Her Gün" short="E" days="11111"/>
+      <daysdef id="8C67793BAE75825A" name="Pazartesi" short="Pa" days="10000"/>
+      <daysdef id="FB74152A125699BC" name="Salı" short="Sa" days="01000"/>
+      <daysdef id="B389CCE18DC98EF3" name="Çarşamba" short="Ça" days="00100"/>
+      <daysdef id="B867A94F1BBE8C7E" name="Perşembe" short="Pe" days="00010"/>
+      <daysdef id="58C3036C1BE6011F" name="Cuma" short="Cu" days="00001"/>
+   </daysdefs>
+   <weeksdefs options="canadd,export:silent" columns="id,weeks,name,short">
+      <weeksdef id="0BF7CF54584120AA" name="Tüm Haftalar" short="Tümü" weeks="1"/>
+   </weeksdefs>
+   <termsdefs options="canadd,export:silent" columns="id,terms,name,short">
+      <termsdef id="FB1CE37564FAB0AD" name="Bütün Bir yıl" short="YIL" terms="1"/>
+   </termsdefs>
+   <subjects options="canadd,export:silent" columns="id,name,short,partner_id">
+      <subject id="6BDC1D839608067D" name="REHBERLİK" short="MUS8" partner_id=""/>
+      <subject id="835D28E7DD2B0F33" name="ART" short="ART6" partner_id=""/>
+      <subject id="797E46B9948F3F82" name="BIOLOGY" short="BIO9" partner_id=""/>
+      <subject id="4874C6E250F0CA69" name="COGRAFYA" short="Geo" partner_id=""/>
+      <subject id="3D8E0692EBDFDF20" name="Biology." short="HIST8" partner_id=""/>
+      <subject id="C2F6D995BF04614E" name="Biology." short="Bio3" partner_id=""/>
+      <subject id="5B8DAC0745606302" name="Biology." short="BİO1(OPT)" partner_id=""/>
+      <subject id="C0A945D6A1D352A9" name="English" short="ENG9" partner_id=""/>
+      <subject id="17F123E99F308CFE" name="English" short="ENG7" partner_id=""/>
+      <subject id="1DD94418D893CB24" name="French" short="FR6" partner_id=""/>
+      <subject id="029AF4C579D63B1F" name="Business." short="BUSIN(OPT)" partner_id=""/>
+      <subject id="829F09835DD32538" name="Business." short="Bus1.2(OPT)" partner_id=""/>
+      <subject id="601166F94FCC7A88" name="Information &amp; Communication Tech." short="ICT6" partner_id=""/>
+      <subject id="E677566DE8C00B9E" name="French" short="FR6" partner_id=""/>
+      <subject id="B98FEEB50DDFA331" name="Chemistry," short="Che1" partner_id=""/>
+      <subject id="56B4743E3CC9400A" name="Chemistry," short="ICT8" partner_id=""/>
+      <subject id="5B7BE600A6C80752" name="Chemistry." short="LIT9" partner_id=""/>
+      <subject id="8F96EE1B8C76144A" name="Chemistry" short="CHEM9" partner_id=""/>
+      <subject id="C72DA036563167D6" name="Chemistry." short="PSYCH9" partner_id=""/>
+      <subject id="DE421023CDE10EC3" name="Chemistry." short="Chem3.3(OPT)" partner_id=""/>
+      <subject id="A453A45D40DD01F1" name="Computer (Optional)," short="GER7" partner_id=""/>
+      <subject id="962A7F4D8C1B4E40" name="Computer," short="Com1" partner_id=""/>
+      <subject id="EA4C50D06484A3F4" name="Cyprus Geography." short="CYPGEO" partner_id=""/>
+      <subject id="B24C28981F8CBEEB" name="Ecology and Environment." short="Ecol.Env" partner_id=""/>
+      <subject id="6D7AA46CDF09E1D4" name="Economics." short="Eco1" partner_id=""/>
+      <subject id="5D70AF8D4B4BDAF7" name="Economics." short="ECO1(OPT)" partner_id=""/>
+      <subject id="43E4D16EFCC834AA" name="Economy." short="Econ4.1(OPT)" partner_id=""/>
+      <subject id="300B6E4F3977C96F" name="Economy." short="Econ1.1(OPT)" partner_id=""/>
+      <subject id="05AF1E2D0B8E0134" name="English Lit." short="Englit3.1(OPT)" partner_id=""/>
+      <subject id="32DB9AE3078401AE" name="English Lit." short="englıt(OPT)" partner_id=""/>
+      <subject id="8FDD227CB1ABA074" name="English Literature." short="Eng1" partner_id=""/>
+      <subject id="992D1AFCDCE542D6" name="English." short="ENG1(OPT)" partner_id=""/>
+      <subject id="1D024257CC8FFAF7" name="French." short="TUR6" partner_id=""/>
+      <subject id="57D41F364AACA740" name="SOCIAL SCIENCES" short="SOC6" partner_id=""/>
+      <subject id="1A678A70B3DC6332" name="French." short="fr101" partner_id=""/>
+      <subject id="506FBD3D8170ACBF" name="French." short="Fre.4.1(OPT)" partner_id=""/>
+      <subject id="D9F113094DDFEEF4" name="Geography." short="Geo1" partner_id=""/>
+      <subject id="C90B4F9E1435B7B5" name="Geography." short="GEO1(OPT)" partner_id=""/>
+      <subject id="00A201B8DDF10B41" name="Geography." short="Geo3.1(OPT)" partner_id=""/>
+      <subject id="08EFC9AB9368B491" name="German." short="Gr(OPT1)" partner_id=""/>
+      <subject id="5C8A78C7CCBFB961" name="German." short="GR101" partner_id=""/>
+      <subject id="7AC7F31815FE98EE" name="German." short="Ger4.1(OPT)" partner_id=""/>
+      <subject id="B607D429A3A02200" name="German." short="Ger2.1(OPT)" partner_id=""/>
+      <subject id="859BD5CAE6612D56" name="Hist. of Turkish Cyp. St." short="His3" partner_id=""/>
+      <subject id="9CB045B85E10D442" name="History." short="His2" partner_id=""/>
+      <subject id="84B5DE95E1D54686" name="History." short="Hist1.1(OPT)" partner_id=""/>
+      <subject id="748EA6B75F5EE106" name="Information And Cominication Technologies." short="ICT123" partner_id=""/>
+      <subject id="69CC6841A93446E7" name="Information And Cominication Technologies." short="ICT(OPT)" partner_id=""/>
+      <subject id="2ECCA054DA362DE2" name="Information And Cominication Technologies." short="Ict4.2(OPT)" partner_id=""/>
+      <subject id="6D7BF626E6A2D7EC" name="Information And Cominication Technologies." short="Ict4.1(OPT)" partner_id=""/>
+      <subject id="20FD551E074E1559" name="Information And Cominication Technologies." short="Ict1.1(OPT)" partner_id=""/>
+      <subject id="FBE054BA2859D7B6" name="Logic." short="LOG" partner_id=""/>
+      <subject id="F665A53F913B7C7C" name="Mathematics" short="MATH6" partner_id=""/>
+      <subject id="80F457319F84CAE4" name="Mathematics" short="MATH9" partner_id=""/>
+      <subject id="3D20D92DFF2868CE" name="Mathematics" short="MATH8" partner_id=""/>
+      <subject id="FDE632D47F717687" name="Modern History." short="MODHIS" partner_id=""/>
+      <subject id="7D01533B7E3B65AB" name="MORALS &amp; RELIGION" short="M&amp;R6" partner_id=""/>
+      <subject id="CF3C9C5F72186A50" name="Music." short="Mus1" partner_id=""/>
+      <subject id="B2FC044066390B57" name="Physical Education" short="PE6" partner_id=""/>
+      <subject id="3AEEDABE3681438C" name="Philosophy." short="PHLP" partner_id=""/>
+      <subject id="F8CABE03D48F2726" name="PHYSICS" short="PHY9" partner_id=""/>
+      <subject id="8FFC7FADFF162C55" name="Physics." short="Phy1" partner_id=""/>
+      <subject id="1003EC3B10FFCF1B" name="Physics." short="PE6" partner_id=""/>
+      <subject id="6EB47EF9D10957B9" name="Physics." short="Phy2.4(OPT)" partner_id=""/>
+      <subject id="C5FB30B2E733D203" name="Physics." short="PSYCH9" partner_id=""/>
+      <subject id="AB2F422E3A0B5A4C" name="Physics." short="Phy2.3(OPT)" partner_id=""/>
+      <subject id="14A652BB289ECC7C" name="SOCIAL SCIENCES" short="SOC6" partner_id=""/>
+      <subject id="364E080D9D0E1F0B" name="Psychology." short="PSYC1(OPT)" partner_id=""/>
+      <subject id="FB4E4020CE100607" name="Psycology." short="ENG6" partner_id=""/>
+      <subject id="E3545D2766D3F102" name="Psycology." short="MUS6" partner_id=""/>
+      <subject id="35E7AF5C43163CB6" name="Psycology." short="FR7" partner_id=""/>
+      <subject id="D1AAD8D0F0805BF0" name="Science&amp;Tech." short="sctec101" partner_id=""/>
+      <subject id="25CC262AB3EA38EB" name="Social Studies." short="Soc1" partner_id=""/>
+      <subject id="A4419792DE8C4A68" name="Sociology." short="soc" partner_id=""/>
+      <subject id="AD9087C0DFC6FB5A" name="Psychology" short="PSYCH9" partner_id=""/>
+      <subject id="C38EDFEB762CD69C" name="Sociology." short="Sos2.1(OPT)" partner_id=""/>
+      <subject id="4026E1B5743FE718" name="English Literature" short="LIT9" partner_id=""/>
+      <subject id="6604F14B84489A30" name="Statistics." short="stat(OPT)" partner_id=""/>
+      <subject id="7AC3CCC7D466A50F" name="OPTIONAL5" short="OPT9" partner_id=""/>
+      <subject id="02B7276EB9AE55FB" name="Turkish Cyp.Lit." short="Tur401" partner_id=""/>
+      <subject id="A303530397FEA13F" name="Turkish History." short="Tur2" partner_id=""/>
+      <subject id="08C8B070AD6C6533" name="Turkish Lang. &amp; Lit." short="Tur1" partner_id=""/>
+      <subject id="2E1E18E2FAE165FD" name="Turkish Lit &amp; Lang." short="Tur4" partner_id=""/>
+      <subject id="51A71830F857F5C0" name="OPTIONAL5" short="OPT9" partner_id=""/>
+      <subject id="B38467B677E39A9B" name="Toplantı" short="T" partner_id=""/>
+   </subjects>
+   <teachers options="canadd,export:silent" columns="id,name,short,gender,color,email,mobile,partner_id,firstname,lastname">
+      <teacher id="644E1F5553007DF9" firstname="Acar" lastname="TEZER" name="Acar TEZER" short="AT" gender="F" color="#FF0000" email="" mobile="" partner_id=""/>
+      <teacher id="D6109934DEB9D86B" firstname="Ahmet" lastname="KARAYİĞİT" name="Ahmet KARAYİĞİT" short="AK" gender="F" color="#00FF00" email="" mobile="" partner_id=""/>
+      <teacher id="D8FF3B2769FC4C87" firstname="Ali" lastname="GÜLMEZER" name="Ali GÜLMEZER" short="AG" gender="F" color="#0000FF" email="" mobile="" partner_id=""/>
+      <teacher id="5B196D24342DA23A" firstname="Asena" lastname="TAÇOY" name="Asena TAÇOY" short="AT" gender="F" color="#FFCCFF" email="" mobile="" partner_id=""/>
+      <teacher id="29858549E0AA368E" firstname="Asya" lastname="DERİNDAĞ" name="Asya DERİNDAĞ" short="AD" gender="F" color="#FFFF66" email="" mobile="" partner_id=""/>
+      <teacher id="2C73A31356ED31F3" firstname="Ayla" lastname="DİKENGİL" name="Ayla DİKENGİL" short="AD" gender="F" color="#FF6666" email="" mobile="" partner_id=""/>
+      <teacher id="BB815DBE00EC6AD9" firstname="Aysel" lastname="AKKAGÜN" name="Aysel AKKAGÜN" short="AA" gender="F" color="#FFCC66" email="" mobile="" partner_id=""/>
+      <teacher id="49D7BF75825D82CE" firstname="Ayşe" lastname="ANI" name="Ayşe ANI" short="AA" gender="F" color="#CCCCFF" email="" mobile="" partner_id=""/>
+      <teacher id="2E7453A82D18D0CA" firstname="Ayşe D" lastname="DENİZ" name="Ayşe D DENİZ" short="ADD" gender="F" color="#66FFFF" email="" mobile="" partner_id=""/>
+      <teacher id="36ECF4615B3DCD97" firstname="Ayşe HEKİMOĞLU" lastname="YÜCETÜRK" name="Ayşe HEKİMOĞLU YÜCETÜRK" short="AHY" gender="F" color="#009933" email="" mobile="" partner_id=""/>
+      <teacher id="58D57F1FE25C8EF3" firstname="Ayşe" lastname="SERTBAY" name="Ayşe SERTBAY" short="AS" gender="F" color="#DDFF97" email="" mobile="" partner_id=""/>
+      <teacher id="E35D0289CF0EB3FD" firstname="Ayşe Y" lastname="ALTUN" name="Ayşe Y ALTUN" short="AYA" gender="F" color="#669900" email="" mobile="" partner_id=""/>
+      <teacher id="2CB7C515187A47C5" firstname="Ayşe" lastname="Z.DOĞU" name="Ayşe Z.DOĞU" short="AZ" gender="F" color="#66FF66" email="" mobile="" partner_id=""/>
+      <teacher id="A09982B62225BC51" firstname="Ayşen" lastname="BALBAZ" name="Ayşen BALBAZ" short="AB" gender="F" color="#FFFFCC" email="" mobile="" partner_id=""/>
+      <teacher id="7695B7C1E862EEBB" firstname="Aytül" lastname="ÖZYÖNÜM" name="Aytül ÖZYÖNÜM" short="AÖ" gender="F" color="#6666FF" email="" mobile="" partner_id=""/>
+      <teacher id="BCB1CA3FBC733901" firstname="Bahar" lastname="ÖZADA" name="Bahar ÖZADA" short="BÖ" gender="F" color="#993333" email="" mobile="" partner_id=""/>
+      <teacher id="B84F7145EED32ED6" firstname="Bahire" lastname="GAYDE" name="Bahire GAYDE" short="BG" gender="F" color="#CCFFFF" email="" mobile="" partner_id=""/>
+      <teacher id="06C6AF8C409AB400" firstname="Başak" lastname="ÖZALTINOK" name="Başak ÖZALTINOK" short="BÖ" gender="F" color="#33CC33" email="" mobile="" partner_id=""/>
+      <teacher id="41E27C7601B40C82" firstname="Buket Dikmenoğlu" lastname="AKMANSOY" name="Buket Dikmenoğlu AKMANSOY" short="BDA" gender="F" color="#99FF66" email="" mobile="" partner_id=""/>
+      <teacher id="00EE170DED55CC8B" firstname="Cahit" lastname="SOLKANAT" name="Cahit SOLKANAT" short="CS" gender="F" color="#3333FF" email="" mobile="" partner_id=""/>
+      <teacher id="1BBD90DAFB195FCF" firstname="Can" lastname="KELEŞ" name="Can KELEŞ" short="CK" gender="F" color="#00CCFF" email="" mobile="" partner_id=""/>
+      <teacher id="C6F676981E00AD40" firstname="Cem" lastname="HAMİ" name="Cem HAMİ" short="CH" gender="F" color="#FFFFFF" email="" mobile="" partner_id=""/>
+      <teacher id="D0479B72306D0FAD" firstname="Cem" lastname="TAMTUNALI" name="Cem TAMTUNALI" short="CT" gender="F" color="#00CC00" email="" mobile="" partner_id=""/>
+      <teacher id="07CFA32DED50B294" firstname="Ceyda" lastname="ARAP" name="Ceyda ARAP" short="CA" gender="F" color="#808080" email="" mobile="" partner_id=""/>
+      <teacher id="F029C139651C1F7E" firstname="Ceylan Firar" lastname="BÜRGÜL" name="Ceylan Firar BÜRGÜL" short="CFB" gender="F" color="#FFFF00" email="" mobile="" partner_id=""/>
+      <teacher id="564827FD83B056CF" firstname="Çiğdem DEPRELİ" lastname="OZAN" name="Çiğdem DEPRELİ OZAN" short="ÇDO" gender="F" color="#FF00FF" email="" mobile="" partner_id=""/>
+      <teacher id="1C64721637976610" firstname="Çise" lastname="BAYKENT" name="Çise BAYKENT" short="ÇB" gender="F" color="#FF9966" email="" mobile="" partner_id=""/>
+      <teacher id="FF4E7F4CE15042EB" firstname="Deniz S" lastname="ELGİN" name="Deniz S ELGİN" short="DSE" gender="F" color="#00FFFF" email="" mobile="" partner_id=""/>
+      <teacher id="CC6E7A18C0EFB38C" firstname="Derviş" lastname="İŞGÜZAR" name="Derviş İŞGÜZAR" short="Dİ" gender="F" color="#808000" email="" mobile="" partner_id=""/>
+      <teacher id="2D5EBBAA80482BE2" firstname="Didem" lastname="GENÇAYLI" name="Didem GENÇAYLI" short="DG" gender="F" color="#800080" email="" mobile="" partner_id=""/>
+      <teacher id="6D3B7951D65AEB1E" firstname="Düriye" lastname="ULUCA" name="Düriye ULUCA" short="DU" gender="F" color="#008080" email="" mobile="" partner_id=""/>
+      <teacher id="7F2FE538E4B37CA4" firstname="Ebru Ö" lastname="YILMAZER" name="Ebru Ö YILMAZER" short="EÖY" gender="F" color="#FF8080" email="" mobile="" partner_id=""/>
+      <teacher id="687C7557159647CF" firstname="Ebru" lastname="ÖZKUL" name="Ebru ÖZKUL" short="EÖ" gender="F" color="#80FF80" email="" mobile="" partner_id=""/>
+      <teacher id="D58F460806ABE142" firstname="Emine" lastname="CIHANGIR" name="Emine CIHANGIR" short="EC" gender="F" color="#8000FF" email="" mobile="" partner_id=""/>
+      <teacher id="DADD9E7B95F8AC37" firstname="Emine" lastname="GÜZEL" name="Emine GÜZEL" short="EG" gender="F" color="#0080FF" email="" mobile="" partner_id=""/>
+      <teacher id="E5FD6CEF8F6929E2" firstname="Emine" lastname="KASABOĞLU" name="Emine KASABOĞLU" short="EK" gender="F" color="#FF8000" email="" mobile="" partner_id=""/>
+      <teacher id="1D4D26EFA4EF3DC8" firstname="Erden" lastname="GAZİOĞLU" name="Erden GAZİOĞLU" short="EG" gender="F" color="#CC6600" email="" mobile="" partner_id=""/>
+      <teacher id="10DFD84AD70F2B77" firstname="Erdoğan" lastname="IŞIK" name="Erdoğan IŞIK" short="EI" gender="F" color="#00FF80" email="" mobile="" partner_id=""/>
+      <teacher id="9190D06700802E1F" firstname="Ertaç" lastname="UÇANER" name="Ertaç UÇANER" short="EU" gender="F" color="#FFC0C0" email="" mobile="" partner_id=""/>
+      <teacher id="87005192117C6EF9" firstname="Esma" lastname="OZE" name="Esma OZE" short="EO" gender="F" color="#FFC000" email="" mobile="" partner_id=""/>
+      <teacher id="023D38D96CBAE192" firstname="Eylül Eser" lastname="VURAL" name="Eylül Eser VURAL" short="EEV" gender="F" color="#FFC030" email="" mobile="" partner_id=""/>
+      <teacher id="FE0FC11519E08975" firstname="Fahriye" lastname="KÖROĞLU" name="Fahriye KÖROĞLU" short="FK" gender="F" color="#00C0FF" email="" mobile="" partner_id=""/>
+      <teacher id="D8986DD7349079F1" firstname="Fatma" lastname="DAĞCIN" name="Fatma DAĞCIN" short="FD" gender="F" color="#C0FFFF" email="" mobile="" partner_id=""/>
+      <teacher id="50418FF08B9936F0" firstname="Fatma" lastname="ZORLU" name="Fatma ZORLU" short="FZ" gender="F" color="#C0C000" email="" mobile="" partner_id=""/>
+      <teacher id="965D1E454AAA087E" firstname="Fatos" lastname="POLAT" name="Fatos POLAT" short="FP" gender="F" color="#80C0FF" email="" mobile="" partner_id=""/>
+      <teacher id="7F12FB870C4704D7" firstname="Fatoş" lastname="KANLI" name="Fatoş KANLI" short="FK" gender="F" color="#00FFC0" email="" mobile="" partner_id=""/>
+      <teacher id="B2D8A0DC1A099BE5" firstname="Fatoş" lastname="GÖYMEN" name="Fatoş GÖYMEN" short="FG" gender="F" color="#60FFC0" email="" mobile="" partner_id=""/>
+      <teacher id="83CA95FCE75F7CFA" firstname="Ferdiye" lastname="KANAGA" name="Ferdiye KANAGA" short="FK" gender="F" color="#6060C0" email="" mobile="" partner_id=""/>
+      <teacher id="194EA53E0ABF868A" firstname="Feride" lastname="BAĞZIBAĞLI" name="Feride BAĞZIBAĞLI" short="FB" gender="F" color="#14C0C0" email="" mobile="" partner_id=""/>
+      <teacher id="C6D55AFA22DA6D49" firstname="Feridun" lastname="ÜSTÜN" name="Feridun ÜSTÜN" short="FÜ" gender="F" color="#14C000" email="" mobile="" partner_id=""/>
+      <teacher id="7A2C7E647B1A154C" firstname="Fırat" lastname="DENİZ" name="Fırat DENİZ" short="FD" gender="F" color="#14C030" email="" mobile="" partner_id=""/>
+      <teacher id="44573E5D4600590E" firstname="Firuze" lastname="ARITMAN" name="Firuze ARITMAN" short="FA" gender="F" color="#00C0C8" email="" mobile="" partner_id=""/>
+      <teacher id="94234DD1E11D80D2" firstname="Funda" lastname="YAMAN" name="Funda YAMAN" short="FY" gender="F" color="#C014FF" email="" mobile="" partner_id=""/>
+      <teacher id="C480DE1169874F7E" firstname="Fülya" lastname="BOZKURT" name="Fülya BOZKURT" short="FB" gender="F" color="#80C014" email="" mobile="" partner_id=""/>
+      <teacher id="0D75E2F4D1FD83F5" firstname="Gamze" lastname="BENSEL" name="Gamze BENSEL" short="GB" gender="F" color="#0014C0" email="" mobile="" partner_id=""/>
+      <teacher id="EF81C10B433BD99F" firstname="Gizem" lastname="BİRAY" name="Gizem BİRAY" short="GB" gender="F" color="#6014C0" email="" mobile="" partner_id=""/>
+      <teacher id="854B29E18E6ACAB5" firstname="Gözde Ozan" lastname="BAYRAKTAR" name="Gözde Ozan BAYRAKTAR" short="GOB" gender="F" color="#1414C0" email="" mobile="" partner_id=""/>
+      <teacher id="C21EFA0498CDBAFC" firstname="Güldem" lastname="HAKTANIR" name="Güldem HAKTANIR" short="GH" gender="F" color="#CC9900" email="" mobile="" partner_id=""/>
+      <teacher id="638A3580BA1C24FB" firstname="Gülşah" lastname="YARMAN" name="Gülşah YARMAN" short="GY" gender="F" color="#999999" email="" mobile="" partner_id=""/>
+      <teacher id="9CCE4075C0695FA7" firstname="Gülten" lastname="SERT" name="Gülten SERT" short="GS" gender="F" color="#99FF99" email="" mobile="" partner_id=""/>
+      <teacher id="9F31C0CEFA3B0612" firstname="Gümrah" lastname="ALASYA" name="Gümrah ALASYA" short="GA" gender="F" color="#333399" email="" mobile="" partner_id=""/>
+      <teacher id="75F631170B819556" firstname="Güniz" lastname="BERKAN" name="Güniz BERKAN" short="GB" gender="F" color="#9966FF" email="" mobile="" partner_id=""/>
+      <teacher id="DFA1D0711753AAFA" firstname="Günser" lastname="ERSINLER" name="Günser ERSINLER" short="GE" gender="F" color="#3333CC" email="" mobile="" partner_id=""/>
+      <teacher id="C18B6D2370B159B1" firstname="Hakan" lastname="KAPLAN" name="Hakan KAPLAN" short="HK" gender="F" color="#666666" email="" mobile="" partner_id=""/>
+      <teacher id="D58B3517D527BD96" firstname="Hakan" lastname="TUNCERİ" name="Hakan TUNCERİ" short="HT" gender="F" color="#CC99FF" email="" mobile="" partner_id=""/>
+      <teacher id="BC49DDB5E387420D" firstname="Halide" lastname="ANI" name="Halide ANI" short="HA" gender="F" color="#CCCCFF" email="" mobile="" partner_id=""/>
+      <teacher id="15FE1356093A141A" firstname="Halil" lastname="SELÇUK" name="Halil SELÇUK" short="HS" gender="F" color="#6600FF" email="" mobile="" partner_id=""/>
+      <teacher id="541C5690ABDBE490" firstname="Hasan" lastname="AKMANSOY" name="Hasan AKMANSOY" short="HA" gender="F" color="#33CCFF" email="" mobile="" partner_id=""/>
+      <teacher id="DB527C378E254427" firstname="Hasan" lastname="FAİZ" name="Hasan FAİZ" short="HF" gender="F" color="#0066CC" email="" mobile="" partner_id=""/>
+      <teacher id="4BFBD074A393014E" firstname="Hatice" lastname="ŞENBÜLBÜL" name="Hatice ŞENBÜLBÜL" short="HŞ" gender="F" color="#3399FF" email="" mobile="" partner_id=""/>
+      <teacher id="217EFFD653C281F8" firstname="Hidayet" lastname="DEMİRPENÇE" name="Hidayet DEMİRPENÇE" short="HD" gender="F" color="#006699" email="" mobile="" partner_id=""/>
+      <teacher id="BC8986B4DFB90FC7" firstname="Hüseyin" lastname="TUFAN" name="Hüseyin TUFAN" short="HT" gender="F" color="#339933" email="" mobile="" partner_id=""/>
+      <teacher id="BF3708D413ACE50C" firstname="İlknur" lastname="KALABALIK" name="İlknur KALABALIK" short="İK" gender="F" color="#990099" email="" mobile="" partner_id=""/>
+      <teacher id="8DB8BC2EA955B5D1" firstname="İmren" lastname="KONİL" name="İmren KONİL" short="İK" gender="F" color="#663300" email="" mobile="" partner_id=""/>
+      <teacher id="0D7D3D9475026B3A" firstname="İpek" lastname="ŞAH" name="İpek ŞAH" short="İŞ" gender="F" color="#CC3399" email="" mobile="" partner_id=""/>
+      <teacher id="D69DF4C42A7B1DF4" firstname="İzlem" lastname="AKANSEL" name="İzlem AKANSEL" short="İA" gender="F" color="#993300" email="" mobile="" partner_id=""/>
+      <teacher id="765D117E42812915" firstname="İzlem" lastname="ERÜLKÜ" name="İzlem ERÜLKÜ" short="İE" gender="F" color="#808000" email="" mobile="" partner_id=""/>
+      <teacher id="46C1452BB35885C7" firstname="Jale E" lastname="BOZ" name="Jale E BOZ" short="JEB" gender="F" color="#FFCCCC" email="" mobile="" partner_id=""/>
+      <teacher id="6B465B07B90D8B57" firstname="Julide" lastname="ÇOBANOĞULLARI" name="Julide ÇOBANOĞULLARI" short="JÇ" gender="F" color="#0033CC" email="" mobile="" partner_id=""/>
+      <teacher id="F3050AFCEF7DF91C" firstname="Kumru" lastname="KARAHÜSEYİN" name="Kumru KARAHÜSEYİN" short="KK" gender="F" color="#996633" email="" mobile="" partner_id=""/>
+      <teacher id="4ADA2727821BC24D" firstname="Lesley" lastname="HAKSEVEN" name="Lesley HAKSEVEN" short="LH" gender="F" color="#FF9900" email="" mobile="" partner_id=""/>
+      <teacher id="4AA26DFC888BA49A" firstname="Mehmet" lastname="BATKAN" name="Mehmet BATKAN" short="MB" gender="F" color="#CC00CC" email="" mobile="" partner_id=""/>
+      <teacher id="5BC3C942D697C723" firstname="Mehveş" lastname="BEYİDOĞLU" name="Mehveş BEYİDOĞLU" short="MB" gender="F" color="#00FFCC" email="" mobile="" partner_id=""/>
+      <teacher id="9532228F62DDFB0D" firstname="Melahat" lastname="USKURİ" name="Melahat USKURİ" short="MU" gender="F" color="#003300" email="" mobile="" partner_id=""/>
+      <teacher id="D69286639C7418B7" firstname="Melek" lastname="ÇETİNKAYA" name="Melek ÇETİNKAYA" short="MÇ" gender="F" color="#336699" email="" mobile="" partner_id=""/>
+      <teacher id="BDC49DAB8058EACF" firstname="Melihan" lastname="ARISOY" name="Melihan ARISOY" short="MA" gender="F" color="#FF0066" email="" mobile="" partner_id=""/>
+      <teacher id="4DF7BAB07447CD4A" firstname="Melis" lastname="YÜCESAN" name="Melis YÜCESAN" short="MY" gender="F" color="#00FF99" email="" mobile="" partner_id=""/>
+      <teacher id="76C16ACE76536207" firstname="Merve" lastname="KARA" name="Merve KARA" short="MK" gender="F" color="#FF5050" email="" mobile="" partner_id=""/>
+      <teacher id="D180643341347044" firstname="Meryem" lastname="ATİK" name="Meryem ATİK" short="MA" gender="F" color="#003399" email="" mobile="" partner_id=""/>
+      <teacher id="61D9DFD303A5BC33" firstname="Meryem" lastname="DEMİR" name="Meryem DEMİR" short="MD" gender="F" color="#FF9933" email="" mobile="" partner_id=""/>
+      <teacher id="B13AD257720CADD7" firstname="Mete" lastname="HANOĞLU" name="Mete HANOĞLU" short="MH" gender="F" color="#FF3399" email="" mobile="" partner_id=""/>
+      <teacher id="D0C6EA79B7229939" firstname="Mete" lastname="ÖZSEZER" name="Mete ÖZSEZER" short="MÖ" gender="F" color="#CC0000" email="" mobile="" partner_id=""/>
+      <teacher id="3A90B6252F38B650" firstname="Mustafa" lastname="ANAYASA" name="Mustafa ANAYASA" short="MA" gender="F" color="#99CCFF" email="" mobile="" partner_id=""/>
+      <teacher id="4FDC5D8D6F63B7F3" firstname="Mustafa" lastname="ÖZPOLİLİ" name="Mustafa ÖZPOLİLİ" short="MÖ" gender="F" color="#993366" email="" mobile="" partner_id=""/>
+      <teacher id="F568306962A9AFDA" firstname="Müesser" lastname="SABAHYILDIZI" name="Müesser SABAHYILDIZI" short="MS" gender="F" color="#FFFF99" email="" mobile="" partner_id=""/>
+      <teacher id="3EE9EF3B4B60FA75" firstname="Müge" lastname="KUTGÜNER" name="Müge KUTGÜNER" short="MK" gender="F" color="#FF3300" email="" mobile="" partner_id=""/>
+      <teacher id="B29398512AE08533" firstname="Necibe" lastname="ARABULUCU" name="Necibe ARABULUCU" short="NA" gender="F" color="#66FF33" email="" mobile="" partner_id=""/>
+      <teacher id="9EB007FDC4804F2A" firstname="Nezire" lastname="DAHLAMEROĞLU" name="Nezire DAHLAMEROĞLU" short="ND" gender="F" color="#CCCC00" email="" mobile="" partner_id=""/>
+      <teacher id="5CA73B55CB0A7C4C" firstname="Nezire" lastname="GÜZEN" name="Nezire GÜZEN" short="NG" gender="F" color="#669999" email="" mobile="" partner_id=""/>
+      <teacher id="3196FA62411614F5" firstname="Nil" lastname="ERGİN" name="Nil ERGİN" short="NE" gender="F" color="#9900FF" email="" mobile="" partner_id=""/>
+      <teacher id="EEF19C55EF911DA1" firstname="Niyazi" lastname="SERHANER" name="Niyazi SERHANER" short="NS" gender="F" color="#006666" email="" mobile="" partner_id=""/>
+      <teacher id="2EE9232D34CFAE79" firstname="Övgü" lastname="ÖZKUL" name="Övgü ÖZKUL" short="ÖÖ" gender="F" color="#CCFF66" email="" mobile="" partner_id=""/>
+      <teacher id="3AED222AB115563E" firstname="Özge" lastname="AFŞAROĞLU" name="Özge AFŞAROĞLU" short="ÖA" gender="F" color="#009999" email="" mobile="" partner_id=""/>
+      <teacher id="404A64051A208898" firstname="Özge" lastname="TECER" name="Özge TECER" short="ÖT" gender="F" color="#990000" email="" mobile="" partner_id=""/>
+      <teacher id="E270933C2CC1CDBD" firstname="Özgün" lastname="ÖZGEÇ" name="Özgün ÖZGEÇ" short="ÖÖ" gender="F" color="#660066" email="" mobile="" partner_id=""/>
+      <teacher id="CA9DBE86D49D502D" firstname="Özgür" lastname="KIRALP" name="Özgür KIRALP" short="ÖK" gender="F" color="#990033" email="" mobile="" partner_id=""/>
+      <teacher id="A0E15FA89B849C98" firstname="Özle" lastname="TAMTUNALI" name="Özle TAMTUNALI" short="ÖT" gender="F" color="#9900CC" email="" mobile="" partner_id=""/>
+      <teacher id="00DD81131201D63C" firstname="Özlem" lastname="HOCAOĞLU" name="Özlem HOCAOĞLU" short="ÖH" gender="F" color="#0000CC" email="" mobile="" partner_id=""/>
+      <teacher id="8E9539B187CE7029" firstname="Öztül" lastname="KAYRA" name="Öztül KAYRA" short="ÖK" gender="F" color="#336600" email="" mobile="" partner_id=""/>
+      <teacher id="F61D138F6CFD4B4F" firstname="Pembe" lastname="ARIKAN" name="Pembe ARIKAN" short="PA" gender="F" color="#CC66FF" email="" mobile="" partner_id=""/>
+      <teacher id="3049343D03839A53" firstname="Pembe Ced" lastname="DİNARLI" name="Pembe Ced DİNARLI" short="PCD" gender="F" color="#6600CC" email="" mobile="" partner_id=""/>
+      <teacher id="F22FE5B8CC3257AB" firstname="Pınar" lastname="HINÇAL" name="Pınar HINÇAL" short="PH" gender="F" color="#FF6600" email="" mobile="" partner_id=""/>
+      <teacher id="6B148228461C5C57" firstname="Ruşen" lastname="ÖZANIL" name="Ruşen ÖZANIL" short="RÖ" gender="F" color="#6699FF" email="" mobile="" partner_id=""/>
+      <teacher id="B9224684DE12CCEE" firstname="Sabire" lastname="VEHBİ" name="Sabire VEHBİ" short="SV" gender="F" color="#339966" email="" mobile="" partner_id=""/>
+      <teacher id="21659FD5C81A324D" firstname="Salih Z" lastname="ŞENKAYA" name="Salih Z ŞENKAYA" short="SZŞ" gender="F" color="#CC0066" email="" mobile="" partner_id=""/>
+      <teacher id="19F4FB535926FEA1" firstname="Savaş" lastname="OĞUL" name="Savaş OĞUL" short="SO" gender="F" color="#FF99FF" email="" mobile="" partner_id=""/>
+      <teacher id="E38F556F7D97CCC5" firstname="Seçil" lastname="ÖZKAN" name="Seçil ÖZKAN" short="SÖ" gender="F" color="#CCFF33" email="" mobile="" partner_id=""/>
+      <teacher id="55969D2C1D9A5FA9" firstname="Seda" lastname="İLGEN" name="Seda İLGEN" short="Sİ" gender="F" color="#00CC99" email="" mobile="" partner_id=""/>
+      <teacher id="8B87DF6D0367D56B" firstname="Seda" lastname="ZİLAN" name="Seda ZİLAN" short="SZ" gender="F" color="#33CCCC" email="" mobile="" partner_id=""/>
+      <teacher id="3F213D81ED674F7C" firstname="Selin" lastname="ANİZ" name="Selin ANİZ" short="SA" gender="F" color="#3333CC" email="" mobile="" partner_id=""/>
+      <teacher id="28552C913A510E1A" firstname="Seniha" lastname="ARSAL" name="Seniha ARSAL" short="SA" gender="F" color="#CC33FF" email="" mobile="" partner_id=""/>
+      <teacher id="63EBA3FCB09DD5D2" firstname="Serap" lastname="GÖÇER" name="Serap GÖÇER" short="SG" gender="F" color="#0066FF" email="" mobile="" partner_id=""/>
+      <teacher id="B346A00F8CD84987" firstname="Serpil" lastname="ÖZTÜRK" name="Serpil ÖZTÜRK" short="SÖ" gender="F" color="#993399" email="" mobile="" partner_id=""/>
+      <teacher id="C94A5E55DAF12D82" firstname="Sıdıka" lastname="BORUCU" name="Sıdıka BORUCU" short="SB" gender="F" color="#C0C0C0" email="" mobile="" partner_id=""/>
+      <teacher id="D2E21D2E3E569A19" firstname="Sonay" lastname="SUCUOĞLU" name="Sonay SUCUOĞLU" short="SS" gender="F" color="#FF9999" email="" mobile="" partner_id=""/>
+      <teacher id="961455DD4F1721CB" firstname="Soner" lastname="ERÇİKA" name="Soner ERÇİKA" short="SE" gender="F" color="#66CCFF" email="" mobile="" partner_id=""/>
+      <teacher id="14128AC372361C6F" firstname="Şerife" lastname="KIZILER" name="Şerife KIZILER" short="ŞK" gender="F" color="#99FF33" email="" mobile="" partner_id=""/>
+      <teacher id="022776B7079993C6" firstname="Şerife" lastname="LORD" name="Şerife LORD" short="ŞL" gender="F" color="#3CE264" email="" mobile="" partner_id=""/>
+      <teacher id="9F365FD2968384EB" firstname="Tolga" lastname="DEMİRSU" name="Tolga DEMİRSU" short="TD" gender="F" color="#3371AC" email="" mobile="" partner_id=""/>
+      <teacher id="F93D68660539F40C" firstname="Tuğçe" lastname="OYAL" name="Tuğçe OYAL" short="TO" gender="F" color="#0F26AA" email="" mobile="" partner_id=""/>
+      <teacher id="CB377569BF653965" firstname="Tutku" lastname="KARAÖZ" name="Tutku KARAÖZ" short="TK" gender="F" color="#4A5A30" email="" mobile="" partner_id=""/>
+      <teacher id="8AAD5099EA486235" firstname="Tüge" lastname="ATAKOL" name="Tüge ATAKOL" short="TA" gender="F" color="#6760F5" email="" mobile="" partner_id=""/>
+      <teacher id="D986E4C68EB74C79" firstname="Yeliz" lastname="AKÇA" name="Yeliz AKÇA" short="YA" gender="F" color="#0993FD" email="" mobile="" partner_id=""/>
+      <teacher id="1D3C9833F966D186" firstname="Yeşim" lastname="ETKİN" name="Yeşim ETKİN" short="YE" gender="F" color="#D660F5" email="" mobile="" partner_id=""/>
+      <teacher id="4F8ACD44A6063F3F" firstname="Yusuf" lastname="KARGILI" name="Yusuf KARGILI" short="YK" gender="F" color="#BA79BA" email="" mobile="" partner_id=""/>
+      <teacher id="304EFE1A0D8A097E" firstname="Zehra" lastname="KEBAPÇIOĞLU" name="Zehra KEBAPÇIOĞLU" short="ZK" gender="F" color="#118D4A" email="" mobile="" partner_id=""/>
+      <teacher id="8D3741F7A9A46B96" firstname="Zühre" lastname="ÇALIŞIR" name="Zühre ÇALIŞIR" short="ZÇ" gender="F" color="#4C9CBB" email="" mobile="" partner_id=""/>
+      <teacher id="8C1863CC6E13EAE7" firstname="Kenan" lastname="AYDENK" name="Kenan AYDENK" short="KA" gender="F" color="#FF9900" email="" mobile="" partner_id=""/>
+      <teacher id="8E40C72D1FB0D940" firstname="Erge" lastname="ZABİT" name="Erge ZABİT" short="EZ" gender="F" color="#FF9900" email="" mobile="" partner_id=""/>
+      <teacher id="A14BD6CD169EB133" firstname="Şeniz" lastname="ŞENSOY" name="Şeniz ŞENSOY" short="ŞŞ" gender="F" color="#FFFFFF" email="" mobile="" partner_id=""/>
+   </teachers>
+   <buildings options="canadd,export:silent" columns="id,name,partner_id">
+      <building id="F7D4D5A38431D5A6" name="ORTA OKUL" partner_id=""/>
+      <building id="50798B4CDFC70023" name="LİSE" partner_id=""/>
+   </buildings>
+   <classrooms options="canadd,export:silent" columns="id,name,short,capacity,buildingid,partner_id">
+      <classroom id="C5DE15C6E5B0DCE6" name="6C" short="6C" capacity="*" buildingid="F7D4D5A38431D5A6" partner_id=""/>
+      <classroom id="EA574D7189198B18" name="6D" short="6D" capacity="*" buildingid="F7D4D5A38431D5A6" partner_id=""/>
+      <classroom id="C208C758787DE72F" name="6E" short="6E" capacity="*" buildingid="F7D4D5A38431D5A6" partner_id=""/>
+      <classroom id="835FD074E59998A6" name="6K" short="6K" capacity="*" buildingid="F7D4D5A38431D5A6" partner_id=""/>
+      <classroom id="5C8B6EC7C7FB1554" name="6N" short="6N" capacity="*" buildingid="F7D4D5A38431D5A6" partner_id=""/>
+      <classroom id="2A90F11B0E9516A9" name="6OC" short="6OC" capacity="*" buildingid="F7D4D5A38431D5A6" partner_id=""/>
+      <classroom id="232916EE8F907ED9" name="6OD" short="6OD" capacity="*" buildingid="F7D4D5A38431D5A6" partner_id=""/>
+      <classroom id="FC688BFA661C6C39" name="6OE" short="6OE" capacity="*" buildingid="F7D4D5A38431D5A6" partner_id=""/>
+      <classroom id="56AE669BD704D7C3" name="6OK" short="6OK" capacity="*" buildingid="F7D4D5A38431D5A6" partner_id=""/>
+      <classroom id="78561BEE4B742A52" name="6ON" short="6ON" capacity="*" buildingid="F7D4D5A38431D5A6" partner_id=""/>
+      <classroom id="1EDE8E109AE14B4A" name="6OR" short="6OR" capacity="*" buildingid="F7D4D5A38431D5A6" partner_id=""/>
+      <classroom id="F2CE7E1EBD158874" name="6OY" short="6OY" capacity="*" buildingid="F7D4D5A38431D5A6" partner_id=""/>
+      <classroom id="95E71CFA1C5FD387" name="6R" short="6R" capacity="*" buildingid="F7D4D5A38431D5A6" partner_id=""/>
+      <classroom id="D54007435BF8D2C5" name="6Y" short="6Y" capacity="*" buildingid="F7D4D5A38431D5A6" partner_id=""/>
+      <classroom id="AC9A3253A95D82EF" name="7C" short="7C" capacity="*" buildingid="F7D4D5A38431D5A6" partner_id=""/>
+      <classroom id="6A0A408D52C6798D" name="7D" short="7D" capacity="*" buildingid="F7D4D5A38431D5A6" partner_id=""/>
+      <classroom id="60B8A6FBA0D532AC" name="7E" short="7E" capacity="*" buildingid="F7D4D5A38431D5A6" partner_id=""/>
+      <classroom id="1F7D4978D841B30F" name="7K" short="7K" capacity="*" buildingid="F7D4D5A38431D5A6" partner_id=""/>
+      <classroom id="E60C00DA056AA40C" name="7N" short="7N" capacity="*" buildingid="F7D4D5A38431D5A6" partner_id=""/>
+      <classroom id="2E6245ED9082B766" name="7OC" short="7OC" capacity="*" buildingid="F7D4D5A38431D5A6" partner_id=""/>
+      <classroom id="1E54510DFCA4B089" name="7OD" short="7OD" capacity="*" buildingid="F7D4D5A38431D5A6" partner_id=""/>
+      <classroom id="19906A93F34104CE" name="7OE" short="7OE" capacity="*" buildingid="F7D4D5A38431D5A6" partner_id=""/>
+      <classroom id="ADA105C4BC4FF2A5" name="7OK" short="7OK" capacity="*" buildingid="F7D4D5A38431D5A6" partner_id=""/>
+      <classroom id="95A69EA2401464E9" name="7ON" short="7ON" capacity="*" buildingid="F7D4D5A38431D5A6" partner_id=""/>
+      <classroom id="197CCE4F59BE0E7B" name="7OY" short="7OY" capacity="*" buildingid="F7D4D5A38431D5A6" partner_id=""/>
+      <classroom id="850185C618486FA3" name="7Y" short="7Y" capacity="*" buildingid="F7D4D5A38431D5A6" partner_id=""/>
+      <classroom id="CF36CF55936E87A4" name="8C" short="8C" capacity="*" buildingid="F7D4D5A38431D5A6" partner_id=""/>
+      <classroom id="6416F9D53232F192" name="8D" short="8D" capacity="*" buildingid="F7D4D5A38431D5A6" partner_id=""/>
+      <classroom id="390735924EDC1C45" name="8E" short="8E" capacity="*" buildingid="F7D4D5A38431D5A6" partner_id=""/>
+      <classroom id="31B3B647D9016DDE" name="8K" short="8K" capacity="*" buildingid="F7D4D5A38431D5A6" partner_id=""/>
+      <classroom id="B1B29EABD5AB97EC" name="8L" short="8L" capacity="*" buildingid="F7D4D5A38431D5A6" partner_id=""/>
+      <classroom id="F70DC833EBDCF002" name="8M" short="8M" capacity="*" buildingid="F7D4D5A38431D5A6" partner_id=""/>
+      <classroom id="FE846CBB235AC682" name="8N" short="8N" capacity="*" buildingid="F7D4D5A38431D5A6" partner_id=""/>
+      <classroom id="F2E1B421F39D5570" name="8OC" short="8OC" capacity="*" buildingid="F7D4D5A38431D5A6" partner_id=""/>
+      <classroom id="87205DA7AAD0FE98" name="8OD" short="8OD" capacity="*" buildingid="F7D4D5A38431D5A6" partner_id=""/>
+      <classroom id="99D85AFF2E0DFAF9" name="8OE" short="8OE" capacity="*" buildingid="F7D4D5A38431D5A6" partner_id=""/>
+      <classroom id="3EA48928B859A89E" name="8OK" short="8OK" capacity="*" buildingid="F7D4D5A38431D5A6" partner_id=""/>
+      <classroom id="17E3FE348EE595FE" name="8OL" short="8OL" capacity="*" buildingid="F7D4D5A38431D5A6" partner_id=""/>
+      <classroom id="873B78CB554FFDF2" name="8OM" short="8OM" capacity="*" buildingid="F7D4D5A38431D5A6" partner_id=""/>
+      <classroom id="BCF55B16402EFE53" name="8ON" short="8ON" capacity="*" buildingid="F7D4D5A38431D5A6" partner_id=""/>
+      <classroom id="8B9D8ABD19DB400F" name="8OR" short="8OR" capacity="*" buildingid="F7D4D5A38431D5A6" partner_id=""/>
+      <classroom id="5F8D7ACB3C0F7D39" name="8OY" short="8OY" capacity="*" buildingid="F7D4D5A38431D5A6" partner_id=""/>
+      <classroom id="FA8CA160EED6778D" name="8R" short="8R" capacity="*" buildingid="F7D4D5A38431D5A6" partner_id=""/>
+      <classroom id="542307E1AA71D608" name="8Y" short="8Y" capacity="*" buildingid="F7D4D5A38431D5A6" partner_id=""/>
+      <classroom id="5B95AC68E1CFAC86" name="9C YKS" short="9C YKS" capacity="*" buildingid="50798B4CDFC70023" partner_id=""/>
+      <classroom id="9BDE4FEFB44EDFD2" name="9D GCE" short="9D GCE" capacity="*" buildingid="50798B4CDFC70023" partner_id=""/>
+      <classroom id="142FB8394671DB77" name="9E YKS" short="9E YKS" capacity="*" buildingid="50798B4CDFC70023" partner_id=""/>
+      <classroom id="1652222D8AFCCC81" name="9K GCE" short="9K GCE" capacity="*" buildingid="50798B4CDFC70023" partner_id=""/>
+      <classroom id="7EB6AC7FF410AFDF" name="9M GCE" short="9M GCE" capacity="*" buildingid="50798B4CDFC70023" partner_id=""/>
+      <classroom id="D16F26F84CAE164C" name="9N GCE" short="9N GCE" capacity="*" buildingid="50798B4CDFC70023" partner_id=""/>
+      <classroom id="9F2658C9B092CE77" name="9OC" short="9OC" capacity="*" buildingid="50798B4CDFC70023" partner_id=""/>
+      <classroom id="05F463CE1D3FA7D5" name="9OD" short="9OD" capacity="*" buildingid="50798B4CDFC70023" partner_id=""/>
+      <classroom id="A4A768A548504EB0" name="9OE" short="9OE" capacity="*" buildingid="50798B4CDFC70023" partner_id=""/>
+      <classroom id="510FC0A85A94ECB4" name="9OK" short="9OK" capacity="*" buildingid="50798B4CDFC70023" partner_id=""/>
+      <classroom id="ED39D41ED0272B4B" name="9OM" short="9OM" capacity="*" buildingid="50798B4CDFC70023" partner_id=""/>
+      <classroom id="D8EDA44541F0C483" name="9ON" short="9ON" capacity="*" buildingid="50798B4CDFC70023" partner_id=""/>
+      <classroom id="E3DA3F5A0B8A9296" name="9OP" short="9OP" capacity="*" buildingid="50798B4CDFC70023" partner_id=""/>
+      <classroom id="74800F960E959BF9" name="9OR" short="9OR" capacity="*" buildingid="50798B4CDFC70023" partner_id=""/>
+      <classroom id="F42BA92369601A1B" name="9OY" short="9OY" capacity="*" buildingid="50798B4CDFC70023" partner_id=""/>
+      <classroom id="26A42F002E8D4384" name="9P GCE" short="9P GCE" capacity="*" buildingid="50798B4CDFC70023" partner_id=""/>
+      <classroom id="B3CDD113388B8D9A" name="9R GCE" short="9R GCE" capacity="*" buildingid="50798B4CDFC70023" partner_id=""/>
+      <classroom id="AFE1A0E69D943C60" name="9Y YKS" short="9Y YKS" capacity="*" buildingid="50798B4CDFC70023" partner_id=""/>
+      <classroom id="C5228807C9CB9433" name="10C YKS" short="10C YKS" capacity="*" buildingid="50798B4CDFC70023" partner_id=""/>
+      <classroom id="D844EEF4A3B1D0AB" name="10D GCE" short="10D GCE" capacity="*" buildingid="50798B4CDFC70023" partner_id=""/>
+      <classroom id="4EC569F0D0B6E291" name="10E YKS" short="10E YKS" capacity="*" buildingid="50798B4CDFC70023" partner_id=""/>
+      <classroom id="FB32CA460D1A7205" name="10G YKS" short="10G YKS" capacity="*" buildingid="50798B4CDFC70023" partner_id=""/>
+      <classroom id="16F2158EA972CECF" name="10L YKS" short="10L YKS" capacity="*" buildingid="50798B4CDFC70023" partner_id=""/>
+      <classroom id="174F6B3E766CF140" name="10M GCE" short="10M GCE" capacity="*" buildingid="50798B4CDFC70023" partner_id=""/>
+      <classroom id="AAC78D48E33B5019" name="10N GCE" short="10N GCE" capacity="*" buildingid="50798B4CDFC70023" partner_id=""/>
+      <classroom id="9B5A118FABDDD83A" name="10OC" short="10OC" capacity="*" buildingid="50798B4CDFC70023" partner_id=""/>
+      <classroom id="5EA30DFC41DD3D53" name="10OD" short="10OD" capacity="*" buildingid="50798B4CDFC70023" partner_id=""/>
+      <classroom id="052B801E914A5E4B" name="10OE" short="10OE" capacity="*" buildingid="50798B4CDFC70023" partner_id=""/>
+      <classroom id="A906ECB85EB0E671" name="10OG" short="10OG" capacity="*" buildingid="50798B4CDFC70023" partner_id=""/>
+      <classroom id="39B0BCF461DBEFD4" name="10OL" short="10OL" capacity="*" buildingid="50798B4CDFC70023" partner_id=""/>
+      <classroom id="2B34C339B5457A3F" name="10OM" short="10OM" capacity="*" buildingid="50798B4CDFC70023" partner_id=""/>
+      <classroom id="16139D38B5E2F106" name="10ON" short="10ON" capacity="*" buildingid="50798B4CDFC70023" partner_id=""/>
+      <classroom id="4A3F0035A49AE767" name="10OP" short="10OP" capacity="*" buildingid="50798B4CDFC70023" partner_id=""/>
+      <classroom id="A712C32485C81CDA" name="10OY" short="10OY" capacity="*" buildingid="50798B4CDFC70023" partner_id=""/>
+      <classroom id="178E98804FE6DA94" name="10P GCE" short="10P GCE" capacity="*" buildingid="50798B4CDFC70023" partner_id=""/>
+      <classroom id="95B036E8C3A9C76D" name="10Y YKS" short="10Y YKS" capacity="*" buildingid="50798B4CDFC70023" partner_id=""/>
+      <classroom id="6EEFABF49A35B4CD" name="11C YKS" short="11C YKS" capacity="*" buildingid="50798B4CDFC70023" partner_id=""/>
+      <classroom id="A92B41572D425053" name="11D GCE" short="11D GCE" capacity="*" buildingid="50798B4CDFC70023" partner_id=""/>
+      <classroom id="9D8C0494E8A56689" name="11E YKS" short="11E YKS" capacity="*" buildingid="50798B4CDFC70023" partner_id=""/>
+      <classroom id="9DC55296B0C421D9" name="11F YKS" short="11F YKS" capacity="*" buildingid="50798B4CDFC70023" partner_id=""/>
+      <classroom id="05801F2ADA3620B7" name="11K GCE" short="11K GCE" capacity="*" buildingid="50798B4CDFC70023" partner_id=""/>
+      <classroom id="DEBF9436B0C20E16" name="11L YKS" short="11L YKS" capacity="*" buildingid="50798B4CDFC70023" partner_id=""/>
+      <classroom id="1F08BBE69840BA1A" name="11M GCE" short="11M GCE" capacity="*" buildingid="50798B4CDFC70023" partner_id=""/>
+      <classroom id="891D2BAB54BE5BE0" name="11N GCE" short="11N GCE" capacity="*" buildingid="50798B4CDFC70023" partner_id=""/>
+      <classroom id="6BD289F5E5AFE8AF" name="11OC" short="11OC" capacity="*" buildingid="50798B4CDFC70023" partner_id=""/>
+      <classroom id="4C2A1E8FE9EDB3D3" name="11OD" short="11OD" capacity="*" buildingid="50798B4CDFC70023" partner_id=""/>
+      <classroom id="CC0000F1229213FF" name="11OE" short="11OE" capacity="*" buildingid="50798B4CDFC70023" partner_id=""/>
+      <classroom id="F40EB356C8563EE7" name="11OF" short="11OF" capacity="*" buildingid="50798B4CDFC70023" partner_id=""/>
+      <classroom id="7078F075FD6EE611" name="11OK" short="11OK" capacity="*" buildingid="50798B4CDFC70023" partner_id=""/>
+      <classroom id="A6324E97D34E6DBA" name="11OL" short="11OL" capacity="*" buildingid="50798B4CDFC70023" partner_id=""/>
+      <classroom id="017C9A8AE2738A9D" name="11OM" short="11OM" capacity="*" buildingid="50798B4CDFC70023" partner_id=""/>
+      <classroom id="E439F8D573A5176B" name="11ON" short="11ON" capacity="*" buildingid="50798B4CDFC70023" partner_id=""/>
+      <classroom id="442F2023A772EA2B" name="11OP" short="11OP" capacity="*" buildingid="50798B4CDFC70023" partner_id=""/>
+      <classroom id="AB96ACA09A5F43F9" name="11OR" short="11OR" capacity="*" buildingid="50798B4CDFC70023" partner_id=""/>
+      <classroom id="84D19D835BCBB8A0" name="11OY" short="11OY" capacity="*" buildingid="50798B4CDFC70023" partner_id=""/>
+      <classroom id="519C832EAC90BD29" name="11P GCE" short="11P GCE" capacity="*" buildingid="50798B4CDFC70023" partner_id=""/>
+      <classroom id="87566579976FBD8A" name="11R GCE" short="11R GCE" capacity="*" buildingid="50798B4CDFC70023" partner_id=""/>
+      <classroom id="E74F089EB65E1792" name="11Y YKS" short="11Y YKS" capacity="*" buildingid="50798B4CDFC70023" partner_id=""/>
+      <classroom id="4426CB8D97AB4D05" name="12C YKS" short="12C YKS" capacity="*" buildingid="50798B4CDFC70023" partner_id=""/>
+      <classroom id="A4D1FCBCA8AAE6D6" name="12D GCE" short="12D GCE" capacity="*" buildingid="50798B4CDFC70023" partner_id=""/>
+      <classroom id="CE50CFDD3DA8EC45" name="12E YKS" short="12E YKS" capacity="*" buildingid="50798B4CDFC70023" partner_id=""/>
+      <classroom id="9FCB150CC8361F64" name="12F YKS" short="12F YKS" capacity="*" buildingid="50798B4CDFC70023" partner_id=""/>
+      <classroom id="D584732E9E15A70E" name="12K GCE" short="12K GCE" capacity="*" buildingid="50798B4CDFC70023" partner_id=""/>
+      <classroom id="434E8293182BEF2C" name="12L YKS" short="12L YKS" capacity="*" buildingid="50798B4CDFC70023" partner_id=""/>
+      <classroom id="97842ACEE4BFB591" name="12N GCE" short="12N GCE" capacity="*" buildingid="50798B4CDFC70023" partner_id=""/>
+      <classroom id="3C5458F86F2B6336" name="12OC" short="12OC" capacity="*" buildingid="50798B4CDFC70023" partner_id=""/>
+      <classroom id="8F115799DCE8425B" name="12OD" short="12OD" capacity="*" buildingid="50798B4CDFC70023" partner_id=""/>
+      <classroom id="98ED1AB179877CF3" name="12OE" short="12OE" capacity="*" buildingid="50798B4CDFC70023" partner_id=""/>
+      <classroom id="DBE325A92A9770F1" name="12OF" short="12OF" capacity="*" buildingid="50798B4CDFC70023" partner_id=""/>
+      <classroom id="119907F415567152" name="12OK" short="12OK" capacity="*" buildingid="50798B4CDFC70023" partner_id=""/>
+      <classroom id="F1EC18650474C3BE" name="12OL" short="12OL" capacity="*" buildingid="50798B4CDFC70023" partner_id=""/>
+      <classroom id="8C0C5608D704E549" name="12ON" short="12ON" capacity="*" buildingid="50798B4CDFC70023" partner_id=""/>
+      <classroom id="22B399F5DE7A79D3" name="12OP" short="12OP" capacity="*" buildingid="50798B4CDFC70023" partner_id=""/>
+      <classroom id="1AC5218BD56309D9" name="12OR" short="12OR" capacity="*" buildingid="50798B4CDFC70023" partner_id=""/>
+      <classroom id="96912B8321945AA4" name="12OY" short="12OY" capacity="*" buildingid="50798B4CDFC70023" partner_id=""/>
+      <classroom id="63578D055D39E674" name="12P GCE" short="12P GCE" capacity="*" buildingid="50798B4CDFC70023" partner_id=""/>
+      <classroom id="E35AF9926F038939" name="12R GCE" short="12R GCE" capacity="*" buildingid="50798B4CDFC70023" partner_id=""/>
+      <classroom id="4BBB83E4D7F76C99" name="12Y YKS" short="12Y YKS" capacity="*" buildingid="50798B4CDFC70023" partner_id=""/>
+      <classroom id="B4ECAF159D5FB334" name="Comp.Lab1" short="Comp.Lab1" capacity="*" buildingid="50798B4CDFC70023" partner_id=""/>
+      <classroom id="E6FBAA392545E199" name="Comp.Lab2" short="Comp.Lab2" capacity="*" buildingid="50798B4CDFC70023" partner_id=""/>
+      <classroom id="F10352DB80F87B9C" name="Comp.Lab1 orta" short="Comp.Lab1 orta" capacity="*" buildingid="F7D4D5A38431D5A6" partner_id=""/>
+      <classroom id="B661367D0F7FEB23" name="Comp.Lab2 orta" short="Comp.Lab 2 orta" capacity="*" buildingid="F7D4D5A38431D5A6" partner_id=""/>
+   </classrooms>
+   <grades options="canadd,export:silent" columns="grade,name,short">
+      <grade name="Sınıf 1" short="G 1" grade="1"/>
+      <grade name="Sınıf 2" short="G 2" grade="2"/>
+      <grade name="Sınıf 3" short="G 3" grade="3"/>
+      <grade name="Sınıf 4" short="G 4" grade="4"/>
+      <grade name="Sınıf 5" short="G 5" grade="5"/>
+      <grade name="Sınıf 6" short="G 6" grade="6"/>
+      <grade name="Sınıf 7" short="G 7" grade="7"/>
+      <grade name="Sınıf 8" short="G 8" grade="8"/>
+      <grade name="Sınıf 9" short="G 9" grade="9"/>
+      <grade name="Sınıf 10" short="G 10" grade="10"/>
+      <grade name="Sınıf 11" short="G 11" grade="11"/>
+      <grade name="Sınıf 12" short="G 12" grade="12"/>
+      <grade name="Sınıf 13" short="G 13" grade="13"/>
+      <grade name="Sınıf 14" short="G 14" grade="14"/>
+      <grade name="Sınıf 15" short="G 15" grade="15"/>
+      <grade name="Sınıf 16" short="G 16" grade="16"/>
+      <grade name="Sınıf 17" short="G 17" grade="17"/>
+      <grade name="Sınıf 18" short="G 18" grade="18"/>
+      <grade name="Sınıf 19" short="G 19" grade="19"/>
+      <grade name="Sınıf 20" short="G 20" grade="20"/>
+   </grades>
+   <classes options="canadd,export:silent" columns="id,name,short,classroomids,teacherid,grade,partner_id">
+      <class id="A6659741183BA47C" name="6C" short="6C" teacherid="" classroomids="" grade="6" partner_id=""/>
+      <class id="8645E0CD67EC2B6D" name="6N" short="6N" teacherid="" classroomids="" grade="6" partner_id=""/>
+      <class id="6052E89F267952D6" name="6E" short="6E" teacherid="" classroomids="" grade="6" partner_id=""/>
+      <class id="9E6AD598D4508D14" name="6Y" short="6Y" teacherid="" classroomids="" grade="6" partner_id=""/>
+      <class id="61225952A4E4B40E" name="6D" short="6D" teacherid="" classroomids="" grade="6" partner_id=""/>
+      <class id="CC103D3BF76472DC" name="6R" short="6R" teacherid="" classroomids="" grade="6" partner_id=""/>
+      <class id="E525ACBBD1AB3033" name="6K" short="6K" teacherid="" classroomids="" grade="6" partner_id=""/>
+      <class id="D8196BCDA33D0A7A" name="7D" short="7D" teacherid="" classroomids="" grade="7" partner_id=""/>
+      <class id="4C6156DE734C14E7" name="7A" short="7D" teacherid="" classroomids="" grade="" partner_id=""/>
+      <class id="B2A8608F39E5944D" name="7C" short="7C" teacherid="" classroomids="" grade="7" partner_id=""/>
+      <class id="DB8B248E773E9D99" name="7K" short="7K" teacherid="" classroomids="" grade="7" partner_id=""/>
+      <class id="F24CDB97D4182517" name="7N" short="7N" teacherid="" classroomids="" grade="7" partner_id=""/>
+      <class id="4BFAE4E4AB75F8F3" name="7Y" short="7Y" teacherid="" classroomids="" grade="7" partner_id=""/>
+      <class id="73DBDC7D916C8ACD" name="8C" short="8C" teacherid="" classroomids="" grade="" partner_id=""/>
+      <class id="4E4D2F7BB21004DE" name="8D" short="8D" teacherid="" classroomids="" grade="" partner_id=""/>
+      <class id="86D510CA7465CDD9" name="8E" short="8E" teacherid="" classroomids="" grade="" partner_id=""/>
+      <class id="A7E69F3213F6B2D9" name="8K" short="8K" teacherid="" classroomids="" grade="" partner_id=""/>
+      <class id="348942D859BC6994" name="8L" short="8L" teacherid="" classroomids="" grade="" partner_id=""/>
+      <class id="45BBFB2A52A649AF" name="8M" short="8M" teacherid="" classroomids="" grade="" partner_id=""/>
+      <class id="F440035C58D1EAD6" name="8N" short="8N" teacherid="" classroomids="" grade="" partner_id=""/>
+      <class id="2CD272773DCBE2FB" name="8R" short="8R" teacherid="" classroomids="" grade="" partner_id=""/>
+      <class id="F426500F3A104609" name="8Y" short="8Y" teacherid="" classroomids="" grade="" partner_id=""/>
+      <class id="4CAB5B050083EF27" name="9N GCE-IGCSE" short="9R" teacherid="" classroomids="" grade="" partner_id=""/>
+      <class id="4A34A39B367645FB" name="9D GCE" short="9D GCE" teacherid="" classroomids="" grade="" partner_id=""/>
+      <class id="C684EE94D4D6A6B4" name="9E YKS" short="9E YKS" teacherid="" classroomids="" grade="" partner_id=""/>
+      <class id="64E216AEF9FCF32D" name="9K GCE" short="9K GCE" teacherid="" classroomids="" grade="" partner_id=""/>
+      <class id="BE0055592E66D7CF" name="9M GCE" short="9M GCE" teacherid="" classroomids="" grade="" partner_id=""/>
+      <class id="9E8A5EE6089E6FBD" name="9N GCE" short="9N GCE" teacherid="" classroomids="" grade="" partner_id=""/>
+      <class id="DEBBC4C127FBE34E" name="9P GCE" short="9P GCE" teacherid="" classroomids="" grade="" partner_id=""/>
+      <class id="D09F06C707038A15" name="9R GCE" short="9R GCE" teacherid="" classroomids="" grade="" partner_id=""/>
+      <class id="64FDADEFB1553B03" name="9Y YKS" short="9Y YKS" teacherid="" classroomids="" grade="" partner_id=""/>
+      <class id="D1720C37565C6C26" name="10C YKS" short="10C YKS" teacherid="" classroomids="" grade="" partner_id=""/>
+      <class id="A0C4A97B405C5292" name="10D GCE" short="10D GCE" teacherid="" classroomids="" grade="" partner_id=""/>
+      <class id="CDECC9693F113782" name="10E YKS" short="10E YKS" teacherid="" classroomids="" grade="" partner_id=""/>
+      <class id="A92E986326B5E9FC" name="10G YKS" short="10G YKS" teacherid="" classroomids="" grade="" partner_id=""/>
+      <class id="AF712B8977AFC7B5" name="10L YKS" short="10L YKS" teacherid="" classroomids="" grade="" partner_id=""/>
+      <class id="4252C2188D16B4E8" name="10M GCE" short="10M GCE" teacherid="" classroomids="" grade="" partner_id=""/>
+      <class id="A437D139E86DDB6B" name="10N GCE" short="10N GCE" teacherid="" classroomids="" grade="" partner_id=""/>
+      <class id="AA1869C52D9BC734" name="10P GCE" short="10P GCE" teacherid="" classroomids="" grade="" partner_id=""/>
+      <class id="3F67D27D94D29DA2" name="10Y YKS" short="10Y YKS" teacherid="" classroomids="" grade="" partner_id=""/>
+      <class id="A9CA3294F9DFCD64" name="11C YKS" short="11C YKS" teacherid="" classroomids="" grade="" partner_id=""/>
+      <class id="A9C0C3A272B150D4" name="11D GCE" short="11D GCE" teacherid="" classroomids="" grade="" partner_id=""/>
+      <class id="0D7872604A3803E5" name="11E YKS" short="11E YKS" teacherid="" classroomids="" grade="" partner_id=""/>
+      <class id="B37E7E7C1EDB3E3B" name="11F YKS" short="11F YKS" teacherid="" classroomids="" grade="" partner_id=""/>
+      <class id="FD981F8BB761C57E" name="11K GCE" short="11K GCE" teacherid="" classroomids="" grade="" partner_id=""/>
+      <class id="15217E34F3D611AF" name="11L YKS" short="11L YKS" teacherid="" classroomids="" grade="" partner_id=""/>
+      <class id="1D0D1177F0188D71" name="11M GCE" short="11M GCE" teacherid="" classroomids="" grade="" partner_id=""/>
+      <class id="F590B59B13D65235" name="11N GCE" short="11N GCE" teacherid="" classroomids="" grade="" partner_id=""/>
+      <class id="6D89287124280BFD" name="11P GCE" short="11P GCE" teacherid="" classroomids="" grade="" partner_id=""/>
+      <class id="02D80D00765F69B3" name="11R GCE" short="11R GCE" teacherid="" classroomids="" grade="" partner_id=""/>
+      <class id="61DF2FE02CEB2E22" name="11Y YKS" short="11Y YKS" teacherid="" classroomids="" grade="" partner_id=""/>
+      <class id="BABF78EA87A9B302" name="12C YKS" short="12C YKS" teacherid="" classroomids="" grade="" partner_id=""/>
+      <class id="4D6565386D68C488" name="12D GCE" short="12D GCE" teacherid="" classroomids="" grade="" partner_id=""/>
+      <class id="E1C8908A2CD9EE2E" name="12E YKS" short="12E YKS" teacherid="" classroomids="" grade="" partner_id=""/>
+      <class id="41BBF0D08B2B5F64" name="12F YKS" short="12F YKS" teacherid="" classroomids="" grade="" partner_id=""/>
+      <class id="39EB725835FD70B8" name="12K GCE" short="12K GCE" teacherid="" classroomids="" grade="" partner_id=""/>
+      <class id="80714E39CA4E4260" name="12L YKS" short="12L YKS" teacherid="" classroomids="" grade="" partner_id=""/>
+      <class id="502997282577A77C" name="12N GCE" short="12N GCE" teacherid="" classroomids="" grade="" partner_id=""/>
+      <class id="50FB61276E968041" name="12P GCE" short="12P GCE" teacherid="" classroomids="" grade="" partner_id=""/>
+      <class id="E82F7EDEC22D9419" name="12R GCE" short="12R GCE" teacherid="" classroomids="" grade="" partner_id=""/>
+      <class id="164304DC10A65F62" name="12Y YKS" short="12Y YKS" teacherid="" classroomids="" grade="" partner_id=""/>
+      <class id="86ED5FB5FFC2E579" name="Toplantı" short="Toplantı" teacherid="" classroomids="" grade="" partner_id=""/>
+   </classes>
+   <groups options="canadd,export:silent" columns="id,classid,name,entireclass,divisiontag,studentcount,studentids">
+      <group id="AEEB096B108CDEB9" name="Bütün Sınıf" classid="FD423B908FB3EB4E" studentids="" entireclass="1" divisiontag="0" studentcount=""/>
+      <group id="368CFDB4A32C54DF" name="Grup 1" classid="FD423B908FB3EB4E" studentids="" entireclass="0" divisiontag="1" studentcount=""/>
+      <group id="B76D934F9849DA14" name="Grup 2" classid="FD423B908FB3EB4E" studentids="" entireclass="0" divisiontag="1" studentcount=""/>
+      <group id="C9E471606A23B00A" name="Erkekler" classid="FD423B908FB3EB4E" studentids="" entireclass="0" divisiontag="2" studentcount=""/>
+      <group id="C253D2CF4305DB38" name="Kızlar" classid="FD423B908FB3EB4E" studentids="" entireclass="0" divisiontag="2" studentcount=""/>
+      <group id="A9A910A8CCC4C3E2" name="Bütün Sınıf" classid="94EE352C7CC6B904" studentids="" entireclass="1" divisiontag="0" studentcount=""/>
+      <group id="257BC4B5D3ED3804" name="Grup 1" classid="94EE352C7CC6B904" studentids="" entireclass="0" divisiontag="1" studentcount=""/>
+      <group id="4570FED5CD2E122C" name="Grup 2" classid="94EE352C7CC6B904" studentids="" entireclass="0" divisiontag="1" studentcount=""/>
+      <group id="98E533B1FF4F786C" name="Erkekler" classid="94EE352C7CC6B904" studentids="" entireclass="0" divisiontag="2" studentcount=""/>
+      <group id="558430F344F036D6" name="Kızlar" classid="94EE352C7CC6B904" studentids="" entireclass="0" divisiontag="2" studentcount=""/>
+      <group id="32E2AFA439815655" name="Bütün Sınıf" classid="9A8C0A6DF3A17C1B" studentids="" entireclass="1" divisiontag="0" studentcount=""/>
+      <group id="70E0ECF8B48589A2" name="Grup 1" classid="9A8C0A6DF3A17C1B" studentids="" entireclass="0" divisiontag="1" studentcount=""/>
+      <group id="86425D8A9C073F70" name="Grup 2" classid="9A8C0A6DF3A17C1B" studentids="" entireclass="0" divisiontag="1" studentcount=""/>
+      <group id="2F905788A4CF1DC5" name="Erkekler" classid="9A8C0A6DF3A17C1B" studentids="" entireclass="0" divisiontag="2" studentcount=""/>
+      <group id="9A7CA1A28CECE8A8" name="Kızlar" classid="9A8C0A6DF3A17C1B" studentids="" entireclass="0" divisiontag="2" studentcount=""/>
+      <group id="19CF3C189AE2DC94" name="Bütün Sınıf" classid="77917A6595DB718F" studentids="" entireclass="1" divisiontag="0" studentcount=""/>
+      <group id="D4512398DE170179" name="Grup 1" classid="77917A6595DB718F" studentids="" entireclass="0" divisiontag="1" studentcount=""/>
+      <group id="F0C737E2082A0DC2" name="Grup 2" classid="77917A6595DB718F" studentids="" entireclass="0" divisiontag="1" studentcount=""/>
+      <group id="7C78B651C049DDBE" name="Erkekler" classid="77917A6595DB718F" studentids="" entireclass="0" divisiontag="2" studentcount=""/>
+      <group id="47B630CAC4BAC26F" name="Kızlar" classid="77917A6595DB718F" studentids="" entireclass="0" divisiontag="2" studentcount=""/>
+      <group id="4E24B92656CAB655" name="Bütün Sınıf" classid="0E708EC5E06C1209" studentids="" entireclass="1" divisiontag="0" studentcount=""/>
+      <group id="13F19EA178299241" name="Grup 1" classid="0E708EC5E06C1209" studentids="" entireclass="0" divisiontag="1" studentcount=""/>
+      <group id="F29A98BF5FD7E45F" name="Grup 2" classid="0E708EC5E06C1209" studentids="" entireclass="0" divisiontag="1" studentcount=""/>
+      <group id="F95B79A8DDFAE691" name="Erkekler" classid="0E708EC5E06C1209" studentids="" entireclass="0" divisiontag="2" studentcount=""/>
+      <group id="1950B3C8D73BC0B8" name="Kızlar" classid="0E708EC5E06C1209" studentids="" entireclass="0" divisiontag="2" studentcount=""/>
+      <group id="0EF8438442F7E985" name="Bütün Sınıf" classid="D942E5626D3861DB" studentids="" entireclass="1" divisiontag="0" studentcount=""/>
+      <group id="4266B74AAC5CF878" name="Grup 1" classid="D942E5626D3861DB" studentids="" entireclass="0" divisiontag="1" studentcount=""/>
+      <group id="E2B2E2DF8AAD43BB" name="Grup 2" classid="D942E5626D3861DB" studentids="" entireclass="0" divisiontag="1" studentcount=""/>
+      <group id="888559D4C23AC053" name="Erkekler" classid="D942E5626D3861DB" studentids="" entireclass="0" divisiontag="2" studentcount=""/>
+      <group id="EBC023D43FB15CCF" name="Kızlar" classid="D942E5626D3861DB" studentids="" entireclass="0" divisiontag="2" studentcount=""/>
+      <group id="305529BFDFDF484D" name="Bütün Sınıf" classid="1AA610DCE7DB90A8" studentids="" entireclass="1" divisiontag="0" studentcount=""/>
+      <group id="A25E9BBA1FCDE265" name="Grup 1" classid="1AA610DCE7DB90A8" studentids="" entireclass="0" divisiontag="1" studentcount=""/>
+      <group id="DB7FE5611CF015D3" name="Grup 2" classid="1AA610DCE7DB90A8" studentids="" entireclass="0" divisiontag="1" studentcount=""/>
+      <group id="C910B6C39711BEBE" name="Erkekler" classid="1AA610DCE7DB90A8" studentids="" entireclass="0" divisiontag="2" studentcount=""/>
+      <group id="25336134E6D67D74" name="Kızlar" classid="1AA610DCE7DB90A8" studentids="" entireclass="0" divisiontag="2" studentcount=""/>
+      <group id="53D8E62F1CB8EF3C" name="Bütün Sınıf" classid="B9988193A3EC65F1" studentids="" entireclass="1" divisiontag="0" studentcount=""/>
+      <group id="73CAA4782AD9421C" name="Grup 1" classid="B9988193A3EC65F1" studentids="" entireclass="0" divisiontag="1" studentcount=""/>
+      <group id="6F02BDFE21559661" name="Grup 2" classid="B9988193A3EC65F1" studentids="" entireclass="0" divisiontag="1" studentcount=""/>
+      <group id="45AFD090DD71CFCF" name="Erkekler" classid="B9988193A3EC65F1" studentids="" entireclass="0" divisiontag="2" studentcount=""/>
+      <group id="19CD8549C8A0764A" name="Kızlar" classid="B9988193A3EC65F1" studentids="" entireclass="0" divisiontag="2" studentcount=""/>
+      <group id="8216B500490B9C91" name="Bütün Sınıf" classid="4C6156DE734C14E7" studentids="" entireclass="1" divisiontag="0" studentcount=""/>
+      <group id="391CF280A8327ADF" name="Grup 1" classid="4C6156DE734C14E7" studentids="" entireclass="0" divisiontag="1" studentcount=""/>
+      <group id="BCDA82D68CB43CB3" name="Grup 2" classid="4C6156DE734C14E7" studentids="" entireclass="0" divisiontag="1" studentcount=""/>
+      <group id="50294223DF0486CA" name="Erkekler" classid="4C6156DE734C14E7" studentids="" entireclass="0" divisiontag="2" studentcount=""/>
+      <group id="4B65DFD2EAA053C7" name="Kızlar" classid="4C6156DE734C14E7" studentids="" entireclass="0" divisiontag="2" studentcount=""/>
+      <group id="E20A1546A75D0DC5" name="Bütün Sınıf" classid="C24438163BE8FFD2" studentids="" entireclass="1" divisiontag="0" studentcount=""/>
+      <group id="7C83EC341DE71420" name="Grup 1" classid="C24438163BE8FFD2" studentids="" entireclass="0" divisiontag="1" studentcount=""/>
+      <group id="47C566AD2277F8D3" name="Grup 2" classid="C24438163BE8FFD2" studentids="" entireclass="0" divisiontag="1" studentcount=""/>
+      <group id="FFB3F053949E8AC4" name="Erkekler" classid="C24438163BE8FFD2" studentids="" entireclass="0" divisiontag="2" studentcount=""/>
+      <group id="DF566C700753DF2C" name="Kızlar" classid="C24438163BE8FFD2" studentids="" entireclass="0" divisiontag="2" studentcount=""/>
+      <group id="793C827AFEC1E8DA" name="Bütün Sınıf" classid="BCC9F63FE07FF487" studentids="" entireclass="1" divisiontag="0" studentcount=""/>
+      <group id="AA9B72316C7FDF6A" name="Grup 1" classid="BCC9F63FE07FF487" studentids="" entireclass="0" divisiontag="1" studentcount=""/>
+      <group id="E6B3D763DE68CE1C" name="Grup 2" classid="BCC9F63FE07FF487" studentids="" entireclass="0" divisiontag="1" studentcount=""/>
+      <group id="570535E6DE368CEB" name="Erkekler" classid="BCC9F63FE07FF487" studentids="" entireclass="0" divisiontag="2" studentcount=""/>
+      <group id="AEE5AF5B9E777A65" name="Kızlar" classid="BCC9F63FE07FF487" studentids="" entireclass="0" divisiontag="2" studentcount=""/>
+      <group id="997C56B959198D81" name="Bütün Sınıf" classid="F4AFA466B9CE6724" studentids="" entireclass="1" divisiontag="0" studentcount=""/>
+      <group id="B62FB04217A917F9" name="Grup 1" classid="F4AFA466B9CE6724" studentids="" entireclass="0" divisiontag="1" studentcount=""/>
+      <group id="511B1D9206F1CB27" name="Grup 2" classid="F4AFA466B9CE6724" studentids="" entireclass="0" divisiontag="1" studentcount=""/>
+      <group id="1C591C3420622890" name="Erkekler" classid="F4AFA466B9CE6724" studentids="" entireclass="0" divisiontag="2" studentcount=""/>
+      <group id="E5DF075EF9B1AAB1" name="Kızlar" classid="F4AFA466B9CE6724" studentids="" entireclass="0" divisiontag="2" studentcount=""/>
+      <group id="50B4F1950C8D8D97" name="Bütün Sınıf" classid="1E773D731ABB4C82" studentids="" entireclass="1" divisiontag="0" studentcount=""/>
+      <group id="539F938797B001B3" name="Grup 1" classid="1E773D731ABB4C82" studentids="" entireclass="0" divisiontag="1" studentcount=""/>
+      <group id="8FBFF8BA09D8F065" name="Grup 2" classid="1E773D731ABB4C82" studentids="" entireclass="0" divisiontag="1" studentcount=""/>
+      <group id="5151FFC87A7EF30E" name="Erkekler" classid="1E773D731ABB4C82" studentids="" entireclass="0" divisiontag="2" studentcount=""/>
+      <group id="115E01B49948D5BF" name="Kızlar" classid="1E773D731ABB4C82" studentids="" entireclass="0" divisiontag="2" studentcount=""/>
+      <group id="A9953A9F674C1277" name="Bütün Sınıf" classid="73DBDC7D916C8ACD" studentids="" entireclass="1" divisiontag="0" studentcount=""/>
+      <group id="4852E6E6497553BA" name="Grup 1" classid="73DBDC7D916C8ACD" studentids="" entireclass="0" divisiontag="1" studentcount=""/>
+      <group id="AF095AE5AAF936CA" name="Grup 2" classid="73DBDC7D916C8ACD" studentids="" entireclass="0" divisiontag="1" studentcount=""/>
+      <group id="A4610A61C99E954B" name="Erkekler" classid="73DBDC7D916C8ACD" studentids="" entireclass="0" divisiontag="2" studentcount=""/>
+      <group id="1BAD0304FE7A7CD8" name="Kızlar" classid="73DBDC7D916C8ACD" studentids="" entireclass="0" divisiontag="2" studentcount=""/>
+      <group id="1CA6104BE9FC9AAF" name="Bütün Sınıf" classid="4E4D2F7BB21004DE" studentids="" entireclass="1" divisiontag="0" studentcount=""/>
+      <group id="635BEF8F6A16E67E" name="Grup 1" classid="4E4D2F7BB21004DE" studentids="" entireclass="0" divisiontag="1" studentcount=""/>
+      <group id="3BABFE8BF0BEED84" name="Grup 2" classid="4E4D2F7BB21004DE" studentids="" entireclass="0" divisiontag="1" studentcount=""/>
+      <group id="F76CC72955C60D8A" name="Erkekler" classid="4E4D2F7BB21004DE" studentids="" entireclass="0" divisiontag="2" studentcount=""/>
+      <group id="BEDC02AB67766428" name="Kızlar" classid="4E4D2F7BB21004DE" studentids="" entireclass="0" divisiontag="2" studentcount=""/>
+      <group id="BC8E6EEC4A455582" name="Bütün Sınıf" classid="86D510CA7465CDD9" studentids="" entireclass="1" divisiontag="0" studentcount=""/>
+      <group id="14C1B30E97667631" name="Grup 1" classid="86D510CA7465CDD9" studentids="" entireclass="0" divisiontag="1" studentcount=""/>
+      <group id="86C6A0DFC2359791" name="Grup 2" classid="86D510CA7465CDD9" studentids="" entireclass="0" divisiontag="1" studentcount=""/>
+      <group id="5AE45598AD643E0D" name="Erkekler" classid="86D510CA7465CDD9" studentids="" entireclass="0" divisiontag="2" studentcount=""/>
+      <group id="373F233C5B4F9681" name="Kızlar" classid="86D510CA7465CDD9" studentids="" entireclass="0" divisiontag="2" studentcount=""/>
+      <group id="D35B8C99E4CB50C3" name="Bütün Sınıf" classid="A7E69F3213F6B2D9" studentids="" entireclass="1" divisiontag="0" studentcount=""/>
+      <group id="3BB907007BEF901A" name="Grup 1" classid="A7E69F3213F6B2D9" studentids="" entireclass="0" divisiontag="1" studentcount=""/>
+      <group id="08AEC5724561E81F" name="Grup 2" classid="A7E69F3213F6B2D9" studentids="" entireclass="0" divisiontag="1" studentcount=""/>
+      <group id="C02D61C97542CAEA" name="Erkekler" classid="A7E69F3213F6B2D9" studentids="" entireclass="0" divisiontag="2" studentcount=""/>
+      <group id="AC8FA7BBDD4F0E72" name="Kızlar" classid="A7E69F3213F6B2D9" studentids="" entireclass="0" divisiontag="2" studentcount=""/>
+      <group id="BAF068A444D74964" name="Bütün Sınıf" classid="348942D859BC6994" studentids="" entireclass="1" divisiontag="0" studentcount=""/>
+      <group id="37D7EAB10E25C252" name="Grup 1" classid="348942D859BC6994" studentids="" entireclass="0" divisiontag="1" studentcount=""/>
+      <group id="85289A97BCC78B72" name="Grup 2" classid="348942D859BC6994" studentids="" entireclass="0" divisiontag="1" studentcount=""/>
+      <group id="2853DEC82715F8D3" name="Erkekler" classid="348942D859BC6994" studentids="" entireclass="0" divisiontag="2" studentcount=""/>
+      <group id="B11362ADE7BB25F8" name="Kızlar" classid="348942D859BC6994" studentids="" entireclass="0" divisiontag="2" studentcount=""/>
+      <group id="E37409C5AF60198F" name="Bütün Sınıf" classid="45BBFB2A52A649AF" studentids="" entireclass="1" divisiontag="0" studentcount=""/>
+      <group id="6A49CE463D1897A2" name="Grup 1" classid="45BBFB2A52A649AF" studentids="" entireclass="0" divisiontag="1" studentcount=""/>
+      <group id="E377950E0FFB351C" name="Grup 2" classid="45BBFB2A52A649AF" studentids="" entireclass="0" divisiontag="1" studentcount=""/>
+      <group id="2AE2F83B604EDAD5" name="Erkekler" classid="45BBFB2A52A649AF" studentids="" entireclass="0" divisiontag="2" studentcount=""/>
+      <group id="1F06F23329395155" name="Kızlar" classid="45BBFB2A52A649AF" studentids="" entireclass="0" divisiontag="2" studentcount=""/>
+      <group id="AF9C8D860673C910" name="Bütün Sınıf" classid="F440035C58D1EAD6" studentids="" entireclass="1" divisiontag="0" studentcount=""/>
+      <group id="E2117F4DE4D1D5B9" name="Grup 1" classid="F440035C58D1EAD6" studentids="" entireclass="0" divisiontag="1" studentcount=""/>
+      <group id="E8D2603762F4D7EB" name="Grup 2" classid="F440035C58D1EAD6" studentids="" entireclass="0" divisiontag="1" studentcount=""/>
+      <group id="44F50AA8B2B996A1" name="Erkekler" classid="F440035C58D1EAD6" studentids="" entireclass="0" divisiontag="2" studentcount=""/>
+      <group id="D24A09AB4A64ACEB" name="Kızlar" classid="F440035C58D1EAD6" studentids="" entireclass="0" divisiontag="2" studentcount=""/>
+      <group id="BD7BBE8A2BF773A7" name="Bütün Sınıf" classid="2CD272773DCBE2FB" studentids="" entireclass="1" divisiontag="0" studentcount=""/>
+      <group id="4C83C8B1D9A473CB" name="Grup 1" classid="2CD272773DCBE2FB" studentids="" entireclass="0" divisiontag="1" studentcount=""/>
+      <group id="4C308A0D2A359837" name="Grup 2" classid="2CD272773DCBE2FB" studentids="" entireclass="0" divisiontag="1" studentcount=""/>
+      <group id="204A3EC615443EB2" name="Erkekler" classid="2CD272773DCBE2FB" studentids="" entireclass="0" divisiontag="2" studentcount=""/>
+      <group id="01406875B0C5B4C5" name="Kızlar" classid="2CD272773DCBE2FB" studentids="" entireclass="0" divisiontag="2" studentcount=""/>
+      <group id="50FE9727305CF434" name="Bütün Sınıf" classid="F426500F3A104609" studentids="" entireclass="1" divisiontag="0" studentcount=""/>
+      <group id="44AEC6106F570C66" name="Grup 1" classid="F426500F3A104609" studentids="" entireclass="0" divisiontag="1" studentcount=""/>
+      <group id="1E91545AF2461D6D" name="Grup 2" classid="F426500F3A104609" studentids="" entireclass="0" divisiontag="1" studentcount=""/>
+      <group id="D77B6E979BDADC2D" name="Erkekler" classid="F426500F3A104609" studentids="" entireclass="0" divisiontag="2" studentcount=""/>
+      <group id="E7180597EB9C2770" name="Kızlar" classid="F426500F3A104609" studentids="" entireclass="0" divisiontag="2" studentcount=""/>
+      <group id="56F1E99FA228BE66" name="Bütün Sınıf" classid="4CAB5B050083EF27" studentids="" entireclass="1" divisiontag="0" studentcount=""/>
+      <group id="A893F9D84FE70554" name="Grup 1" classid="4CAB5B050083EF27" studentids="" entireclass="0" divisiontag="1" studentcount=""/>
+      <group id="66E98A8F5E56FE4D" name="Grup 2" classid="4CAB5B050083EF27" studentids="" entireclass="0" divisiontag="1" studentcount=""/>
+      <group id="1C23E314827EE44C" name="Erkekler" classid="4CAB5B050083EF27" studentids="" entireclass="0" divisiontag="2" studentcount=""/>
+      <group id="0EAD87055B57E01A" name="Kızlar" classid="4CAB5B050083EF27" studentids="" entireclass="0" divisiontag="2" studentcount=""/>
+      <group id="B13341E683173A49" name="Bütün Sınıf" classid="4A34A39B367645FB" studentids="" entireclass="1" divisiontag="0" studentcount=""/>
+      <group id="D5A9AAF50F8636DD" name="Grup 1" classid="4A34A39B367645FB" studentids="" entireclass="0" divisiontag="1" studentcount=""/>
+      <group id="701DD15F89BE0475" name="Grup 2" classid="4A34A39B367645FB" studentids="" entireclass="0" divisiontag="1" studentcount=""/>
+      <group id="13165C131CA01EFA" name="Erkekler" classid="4A34A39B367645FB" studentids="" entireclass="0" divisiontag="2" studentcount=""/>
+      <group id="8AB227B6083B2B2A" name="Kızlar" classid="4A34A39B367645FB" studentids="" entireclass="0" divisiontag="2" studentcount=""/>
+      <group id="BA0DEF6D0A845BA0" name="Bütün Sınıf" classid="C684EE94D4D6A6B4" studentids="" entireclass="1" divisiontag="0" studentcount=""/>
+      <group id="1F7CD81308D6F732" name="Grup 1" classid="C684EE94D4D6A6B4" studentids="" entireclass="0" divisiontag="1" studentcount=""/>
+      <group id="A58F78B0FFEADC5D" name="Grup 2" classid="C684EE94D4D6A6B4" studentids="" entireclass="0" divisiontag="1" studentcount=""/>
+      <group id="5A40A5E94C7F9755" name="Erkekler" classid="C684EE94D4D6A6B4" studentids="" entireclass="0" divisiontag="2" studentcount=""/>
+      <group id="BD7B6FE8C9F633D1" name="Kızlar" classid="C684EE94D4D6A6B4" studentids="" entireclass="0" divisiontag="2" studentcount=""/>
+      <group id="01102A256FAF31C5" name="Bütün Sınıf" classid="64E216AEF9FCF32D" studentids="" entireclass="1" divisiontag="0" studentcount=""/>
+      <group id="F523C93B2F8FBEDB" name="Grup 1" classid="64E216AEF9FCF32D" studentids="" entireclass="0" divisiontag="1" studentcount=""/>
+      <group id="D80425EEDCD662F3" name="Grup 2" classid="64E216AEF9FCF32D" studentids="" entireclass="0" divisiontag="1" studentcount=""/>
+      <group id="DEC482AF45F9EC6C" name="Erkekler" classid="64E216AEF9FCF32D" studentids="" entireclass="0" divisiontag="2" studentcount=""/>
+      <group id="EFF398FD920241AF" name="Kızlar" classid="64E216AEF9FCF32D" studentids="" entireclass="0" divisiontag="2" studentcount=""/>
+      <group id="08B414564034FEC4" name="Bütün Sınıf" classid="BE0055592E66D7CF" studentids="" entireclass="1" divisiontag="0" studentcount=""/>
+      <group id="D41B537A0D804CC8" name="Grup 1" classid="BE0055592E66D7CF" studentids="" entireclass="0" divisiontag="1" studentcount=""/>
+      <group id="974355AD658DE0BB" name="Grup 2" classid="BE0055592E66D7CF" studentids="" entireclass="0" divisiontag="1" studentcount=""/>
+      <group id="574B57998437C36C" name="Erkekler" classid="BE0055592E66D7CF" studentids="" entireclass="0" divisiontag="2" studentcount=""/>
+      <group id="678AA5EAD1FFDDC5" name="Kızlar" classid="BE0055592E66D7CF" studentids="" entireclass="0" divisiontag="2" studentcount=""/>
+      <group id="406F483D122DD2D0" name="Bütün Sınıf" classid="9E8A5EE6089E6FBD" studentids="" entireclass="1" divisiontag="0" studentcount=""/>
+      <group id="3F6E75212F72A208" name="Grup 1" classid="9E8A5EE6089E6FBD" studentids="" entireclass="0" divisiontag="1" studentcount=""/>
+      <group id="425C92EAA5B59D6E" name="Grup 2" classid="9E8A5EE6089E6FBD" studentids="" entireclass="0" divisiontag="1" studentcount=""/>
+      <group id="0CE80382CD14BB10" name="Erkekler" classid="9E8A5EE6089E6FBD" studentids="" entireclass="0" divisiontag="2" studentcount=""/>
+      <group id="8E063C8D8874DF69" name="Kızlar" classid="9E8A5EE6089E6FBD" studentids="" entireclass="0" divisiontag="2" studentcount=""/>
+      <group id="234A724D774C02FC" name="Bütün Sınıf" classid="DEBBC4C127FBE34E" studentids="" entireclass="1" divisiontag="0" studentcount=""/>
+      <group id="433C3096856C55DC" name="Grup 1" classid="DEBBC4C127FBE34E" studentids="" entireclass="0" divisiontag="1" studentcount=""/>
+      <group id="C9A7566270A735AC" name="Grup 2" classid="DEBBC4C127FBE34E" studentids="" entireclass="0" divisiontag="1" studentcount=""/>
+      <group id="09FA9A019348FDA0" name="Erkekler" classid="DEBBC4C127FBE34E" studentids="" entireclass="0" divisiontag="2" studentcount=""/>
+      <group id="832860C9662B9B1A" name="Kızlar" classid="DEBBC4C127FBE34E" studentids="" entireclass="0" divisiontag="2" studentcount=""/>
+      <group id="C94703537C0962F6" name="Bütün Sınıf" classid="D09F06C707038A15" studentids="" entireclass="1" divisiontag="0" studentcount=""/>
+      <group id="521695818F3DD0DD" name="Grup 1" classid="D09F06C707038A15" studentids="" entireclass="0" divisiontag="1" studentcount=""/>
+      <group id="9174DB4B3BF80F40" name="Grup 2" classid="D09F06C707038A15" studentids="" entireclass="0" divisiontag="1" studentcount=""/>
+      <group id="71175767AEAD63A7" name="Erkekler" classid="D09F06C707038A15" studentids="" entireclass="0" divisiontag="2" studentcount=""/>
+      <group id="D4559D3E1744876B" name="Kızlar" classid="D09F06C707038A15" studentids="" entireclass="0" divisiontag="2" studentcount=""/>
+      <group id="A1CBAFC8C9C6192A" name="Bütün Sınıf" classid="64FDADEFB1553B03" studentids="" entireclass="1" divisiontag="0" studentcount=""/>
+      <group id="957FDEB208E0315B" name="Grup 1" classid="64FDADEFB1553B03" studentids="" entireclass="0" divisiontag="1" studentcount=""/>
+      <group id="89A3D8A9D1CAA7DC" name="Grup 2" classid="64FDADEFB1553B03" studentids="" entireclass="0" divisiontag="1" studentcount=""/>
+      <group id="37282CEB762BE6BA" name="Erkekler" classid="64FDADEFB1553B03" studentids="" entireclass="0" divisiontag="2" studentcount=""/>
+      <group id="68B8C88FD6B5B112" name="Kızlar" classid="64FDADEFB1553B03" studentids="" entireclass="0" divisiontag="2" studentcount=""/>
+      <group id="8A6C3908498EA9F7" name="Bütün Sınıf" classid="D1720C37565C6C26" studentids="" entireclass="1" divisiontag="0" studentcount=""/>
+      <group id="BDAF8494F93C672F" name="Grup 1" classid="D1720C37565C6C26" studentids="" entireclass="0" divisiontag="1" studentcount=""/>
+      <group id="237A92850AFC63E6" name="Grup 2" classid="D1720C37565C6C26" studentids="" entireclass="0" divisiontag="1" studentcount=""/>
+      <group id="2BEEAF152401E7FB" name="Erkekler" classid="D1720C37565C6C26" studentids="" entireclass="0" divisiontag="2" studentcount=""/>
+      <group id="9C69A1C167C97812" name="Kızlar" classid="D1720C37565C6C26" studentids="" entireclass="0" divisiontag="2" studentcount=""/>
+      <group id="3CE2620FAD04A7C0" name="Bütün Sınıf" classid="A0C4A97B405C5292" studentids="" entireclass="1" divisiontag="0" studentcount=""/>
+      <group id="D9AB2358902926D2" name="Grup 1" classid="A0C4A97B405C5292" studentids="" entireclass="0" divisiontag="1" studentcount=""/>
+      <group id="B1FFB67E2BF0A68F" name="Grup 2" classid="A0C4A97B405C5292" studentids="" entireclass="0" divisiontag="1" studentcount=""/>
+      <group id="50BD62C50E19E7D2" name="Erkekler" classid="A0C4A97B405C5292" studentids="" entireclass="0" divisiontag="2" studentcount=""/>
+      <group id="49B5CC413FA6E579" name="Kızlar" classid="A0C4A97B405C5292" studentids="" entireclass="0" divisiontag="2" studentcount=""/>
+      <group id="5C2D2E7B26803426" name="Bütün Sınıf" classid="CDECC9693F113782" studentids="" entireclass="1" divisiontag="0" studentcount=""/>
+      <group id="815E2593A5407083" name="Grup 1" classid="CDECC9693F113782" studentids="" entireclass="0" divisiontag="1" studentcount=""/>
+      <group id="9C2CB949EFA8367D" name="Grup 2" classid="CDECC9693F113782" studentids="" entireclass="0" divisiontag="1" studentcount=""/>
+      <group id="170DE15B011519A8" name="Erkekler" classid="CDECC9693F113782" studentids="" entireclass="0" divisiontag="2" studentcount=""/>
+      <group id="B75A0CEFDF6564EB" name="Kızlar" classid="CDECC9693F113782" studentids="" entireclass="0" divisiontag="2" studentcount=""/>
+      <group id="CDA7D517CC122686" name="Bütün Sınıf" classid="A92E986326B5E9FC" studentids="" entireclass="1" divisiontag="0" studentcount=""/>
+      <group id="4CF8F9DE0FA17C45" name="Grup 1" classid="A92E986326B5E9FC" studentids="" entireclass="0" divisiontag="1" studentcount=""/>
+      <group id="A15E747313A780BC" name="Grup 2" classid="A92E986326B5E9FC" studentids="" entireclass="0" divisiontag="1" studentcount=""/>
+      <group id="4AABEA48076FE659" name="Erkekler" classid="A92E986326B5E9FC" studentids="" entireclass="0" divisiontag="2" studentcount=""/>
+      <group id="FE04EED4379C0074" name="Kızlar" classid="A92E986326B5E9FC" studentids="" entireclass="0" divisiontag="2" studentcount=""/>
+      <group id="2CAB7C20977D63AC" name="Bütün Sınıf" classid="AF712B8977AFC7B5" studentids="" entireclass="1" divisiontag="0" studentcount=""/>
+      <group id="C7231E61FCD5B88B" name="Grup 1" classid="AF712B8977AFC7B5" studentids="" entireclass="0" divisiontag="1" studentcount=""/>
+      <group id="65E14ED1F3FE7286" name="Grup 2" classid="AF712B8977AFC7B5" studentids="" entireclass="0" divisiontag="1" studentcount=""/>
+      <group id="7728A23B710E8D50" name="Erkekler" classid="AF712B8977AFC7B5" studentids="" entireclass="0" divisiontag="2" studentcount=""/>
+      <group id="958BE1368307D62F" name="Kızlar" classid="AF712B8977AFC7B5" studentids="" entireclass="0" divisiontag="2" studentcount=""/>
+      <group id="780CA46377F5B54A" name="Bütün Sınıf" classid="4252C2188D16B4E8" studentids="" entireclass="1" divisiontag="0" studentcount=""/>
+      <group id="2D84E6BEEFF50250" name="Grup 1" classid="4252C2188D16B4E8" studentids="" entireclass="0" divisiontag="1" studentcount=""/>
+      <group id="B141F2EBBF774B6C" name="Grup 2" classid="4252C2188D16B4E8" studentids="" entireclass="0" divisiontag="1" studentcount=""/>
+      <group id="147CBCEB3CEDE7E7" name="Erkekler" classid="4252C2188D16B4E8" studentids="" entireclass="0" divisiontag="2" studentcount=""/>
+      <group id="F761199EEA548BFF" name="Kızlar" classid="4252C2188D16B4E8" studentids="" entireclass="0" divisiontag="2" studentcount=""/>
+      <group id="E28FCE37E7E64ADA" name="Bütün Sınıf" classid="A437D139E86DDB6B" studentids="" entireclass="1" divisiontag="0" studentcount=""/>
+      <group id="6602A2210C3320AC" name="Grup 1" classid="A437D139E86DDB6B" studentids="" entireclass="0" divisiontag="1" studentcount=""/>
+      <group id="1135D75B32C83559" name="Grup 2" classid="A437D139E86DDB6B" studentids="" entireclass="0" divisiontag="1" studentcount=""/>
+      <group id="AC21C8D43710613F" name="Erkekler" classid="A437D139E86DDB6B" studentids="" entireclass="0" divisiontag="2" studentcount=""/>
+      <group id="254F8F9C09F2FEB9" name="Kızlar" classid="A437D139E86DDB6B" studentids="" entireclass="0" divisiontag="2" studentcount=""/>
+      <group id="C1517DCD0CA71021" name="Bütün Sınıf" classid="AA1869C52D9BC734" studentids="" entireclass="1" divisiontag="0" studentcount=""/>
+      <group id="3B4659B80AF43FA8" name="Grup 1" classid="AA1869C52D9BC734" studentids="" entireclass="0" divisiontag="1" studentcount=""/>
+      <group id="25EC6A71193916B9" name="Grup 2" classid="AA1869C52D9BC734" studentids="" entireclass="0" divisiontag="1" studentcount=""/>
+      <group id="620CCFA38B62056B" name="Erkekler" classid="AA1869C52D9BC734" studentids="" entireclass="0" divisiontag="2" studentcount=""/>
+      <group id="4A51EA9C27D04198" name="Kızlar" classid="AA1869C52D9BC734" studentids="" entireclass="0" divisiontag="2" studentcount=""/>
+      <group id="8BEC06687C932E5A" name="Bütün Sınıf" classid="3F67D27D94D29DA2" studentids="" entireclass="1" divisiontag="0" studentcount=""/>
+      <group id="B3D1B2CB5E518F61" name="Grup 1" classid="3F67D27D94D29DA2" studentids="" entireclass="0" divisiontag="1" studentcount=""/>
+      <group id="EFEE17FDD05A7E13" name="Grup 2" classid="3F67D27D94D29DA2" studentids="" entireclass="0" divisiontag="1" studentcount=""/>
+      <group id="F6AEF8E74E7D8044" name="Erkekler" classid="3F67D27D94D29DA2" studentids="" entireclass="0" divisiontag="2" studentcount=""/>
+      <group id="EAD2F2DF1767F6C3" name="Kızlar" classid="3F67D27D94D29DA2" studentids="" entireclass="0" divisiontag="2" studentcount=""/>
+      <group id="BF754B77F1C38508" name="Bütün Sınıf" classid="A9CA3294F9DFCD64" studentids="" entireclass="1" divisiontag="0" studentcount=""/>
+      <group id="F468E6732712FE7C" name="Grup 1" classid="A9CA3294F9DFCD64" studentids="" entireclass="0" divisiontag="1" studentcount=""/>
+      <group id="BFAA60EC2BA3E32E" name="Grup 2" classid="A9CA3294F9DFCD64" studentids="" entireclass="0" divisiontag="1" studentcount=""/>
+      <group id="38D427B3FE6680A8" name="Erkekler" classid="A9CA3294F9DFCD64" studentids="" entireclass="0" divisiontag="2" studentcount=""/>
+      <group id="340CC56309E24DA4" name="Kızlar" classid="A9CA3294F9DFCD64" studentids="" entireclass="0" divisiontag="2" studentcount=""/>
+      <group id="46CBF4B6D9AC19B0" name="Bütün Sınıf" classid="A9C0C3A272B150D4" studentids="" entireclass="1" divisiontag="0" studentcount=""/>
+      <group id="7064AC3ED16C6490" name="Grup 1" classid="A9C0C3A272B150D4" studentids="" entireclass="0" divisiontag="1" studentcount=""/>
+      <group id="AC81117143755342" name="Grup 2" classid="A9C0C3A272B150D4" studentids="" entireclass="0" divisiontag="1" studentcount=""/>
+      <group id="5A0565B2E7D69221" name="Erkekler" classid="A9C0C3A272B150D4" studentids="" entireclass="0" divisiontag="2" studentcount=""/>
+      <group id="238FD506D6458CFA" name="Kızlar" classid="A9C0C3A272B150D4" studentids="" entireclass="0" divisiontag="2" studentcount=""/>
+      <group id="37CE191EC74B3632" name="Bütün Sınıf" classid="0D7872604A3803E5" studentids="" entireclass="1" divisiontag="0" studentcount=""/>
+      <group id="FB45EE51D617EEC8" name="Grup 1" classid="0D7872604A3803E5" studentids="" entireclass="0" divisiontag="1" studentcount=""/>
+      <group id="0B84B87A0EE09068" name="Grup 2" classid="0D7872604A3803E5" studentids="" entireclass="0" divisiontag="1" studentcount=""/>
+      <group id="DFA26D32FA0F36E3" name="Erkekler" classid="0D7872604A3803E5" studentids="" entireclass="0" divisiontag="2" studentcount=""/>
+      <group id="42DD37327785D35F" name="Kızlar" classid="0D7872604A3803E5" studentids="" entireclass="0" divisiontag="2" studentcount=""/>
+      <group id="F2B6CE2ED95F56C4" name="Bütün Sınıf" classid="B37E7E7C1EDB3E3B" studentids="" entireclass="1" divisiontag="0" studentcount=""/>
+      <group id="083DD2EA04BADDDA" name="Grup 1" classid="B37E7E7C1EDB3E3B" studentids="" entireclass="0" divisiontag="1" studentcount=""/>
+      <group id="17DAEE13697BA1D4" name="Grup 2" classid="B37E7E7C1EDB3E3B" studentids="" entireclass="0" divisiontag="1" studentcount=""/>
+      <group id="F72A1B593A514A50" name="Erkekler" classid="B37E7E7C1EDB3E3B" studentids="" entireclass="0" divisiontag="2" studentcount=""/>
+      <group id="B8C4186A4042BE4A" name="Kızlar" classid="B37E7E7C1EDB3E3B" studentids="" entireclass="0" divisiontag="2" studentcount=""/>
+      <group id="D0AB8B78F52E9D07" name="Bütün Sınıf" classid="FD981F8BB761C57E" studentids="" entireclass="1" divisiontag="0" studentcount=""/>
+      <group id="4E20958CECA88BDC" name="Grup 1" classid="FD981F8BB761C57E" studentids="" entireclass="0" divisiontag="1" studentcount=""/>
+      <group id="581ED2E4905D6505" name="Grup 2" classid="FD981F8BB761C57E" studentids="" entireclass="0" divisiontag="1" studentcount=""/>
+      <group id="943F3817028653B7" name="Erkekler" classid="FD981F8BB761C57E" studentids="" entireclass="0" divisiontag="2" studentcount=""/>
+      <group id="02D9B979D8A9458E" name="Kızlar" classid="FD981F8BB761C57E" studentids="" entireclass="0" divisiontag="2" studentcount=""/>
+      <group id="59A1002876EE1E3D" name="Bütün Sınıf" classid="15217E34F3D611AF" studentids="" entireclass="1" divisiontag="0" studentcount=""/>
+      <group id="47F049D5B40DB981" name="Grup 1" classid="15217E34F3D611AF" studentids="" entireclass="0" divisiontag="1" studentcount=""/>
+      <group id="E4C1768AD6231BBF" name="Grup 2" classid="15217E34F3D611AF" studentids="" entireclass="0" divisiontag="1" studentcount=""/>
+      <group id="C463F2A748D87026" name="Erkekler" classid="15217E34F3D611AF" studentids="" entireclass="0" divisiontag="2" studentcount=""/>
+      <group id="D8F57563E94CF4F2" name="Kızlar" classid="15217E34F3D611AF" studentids="" entireclass="0" divisiontag="2" studentcount=""/>
+      <group id="D31D610EAB078636" name="Bütün Sınıf" classid="1D0D1177F0188D71" studentids="" entireclass="1" divisiontag="0" studentcount=""/>
+      <group id="F1841BE0A821565D" name="Grup 1" classid="1D0D1177F0188D71" studentids="" entireclass="0" divisiontag="1" studentcount=""/>
+      <group id="1175DA29B641A93D" name="Grup 2" classid="1D0D1177F0188D71" studentids="" entireclass="0" divisiontag="1" studentcount=""/>
+      <group id="DCB2D079A5B31537" name="Erkekler" classid="1D0D1177F0188D71" studentids="" entireclass="0" divisiontag="2" studentcount=""/>
+      <group id="F5CE590ADA18F158" name="Kızlar" classid="1D0D1177F0188D71" studentids="" entireclass="0" divisiontag="2" studentcount=""/>
+      <group id="2B4A97E5FEB55296" name="Bütün Sınıf" classid="F590B59B13D65235" studentids="" entireclass="1" divisiontag="0" studentcount=""/>
+      <group id="8F61B49A3717982C" name="Grup 1" classid="F590B59B13D65235" studentids="" entireclass="0" divisiontag="1" studentcount=""/>
+      <group id="0166A26B61E6B98C" name="Grup 2" classid="F590B59B13D65235" studentids="" entireclass="0" divisiontag="1" studentcount=""/>
+      <group id="1D20FE1EAA6EBA72" name="Erkekler" classid="F590B59B13D65235" studentids="" entireclass="0" divisiontag="2" studentcount=""/>
+      <group id="23E1DF082891BCA3" name="Kızlar" classid="F590B59B13D65235" studentids="" entireclass="0" divisiontag="2" studentcount=""/>
+      <group id="B208AA64A740188C" name="Bütün Sınıf" classid="6D89287124280BFD" studentids="" entireclass="1" divisiontag="0" studentcount=""/>
+      <group id="B103531FAF656F0D" name="Grup 1" classid="6D89287124280BFD" studentids="" entireclass="0" divisiontag="1" studentcount=""/>
+      <group id="3D2920C70675160D" name="Grup 2" classid="6D89287124280BFD" studentids="" entireclass="0" divisiontag="1" studentcount=""/>
+      <group id="256D336D78E460CB" name="Erkekler" classid="6D89287124280BFD" studentids="" entireclass="0" divisiontag="2" studentcount=""/>
+      <group id="8193DDDEC8C91F81" name="Kızlar" classid="6D89287124280BFD" studentids="" entireclass="0" divisiontag="2" studentcount=""/>
+      <group id="F8A6A1745BB95939" name="Bütün Sınıf" classid="02D80D00765F69B3" studentids="" entireclass="1" divisiontag="0" studentcount=""/>
+      <group id="D02BA54B21CB5CE1" name="Grup 1" classid="02D80D00765F69B3" studentids="" entireclass="0" divisiontag="1" studentcount=""/>
+      <group id="29E801E2CF9CE135" name="Grup 2" classid="02D80D00765F69B3" studentids="" entireclass="0" divisiontag="1" studentcount=""/>
+      <group id="6604EB3E56A5489F" name="Erkekler" classid="02D80D00765F69B3" studentids="" entireclass="0" divisiontag="2" studentcount=""/>
+      <group id="C22B95AFA68A0755" name="Kızlar" classid="02D80D00765F69B3" studentids="" entireclass="0" divisiontag="2" studentcount=""/>
+      <group id="979596542CA9A73B" name="Bütün Sınıf" classid="61DF2FE02CEB2E22" studentids="" entireclass="1" divisiontag="0" studentcount=""/>
+      <group id="B267A5E16231F47E" name="Grup 1" classid="61DF2FE02CEB2E22" studentids="" entireclass="0" divisiontag="1" studentcount=""/>
+      <group id="A7BF555D80D752FF" name="Grup 2" classid="61DF2FE02CEB2E22" studentids="" entireclass="0" divisiontag="1" studentcount=""/>
+      <group id="3F64E216354EB67C" name="Erkekler" classid="61DF2FE02CEB2E22" studentids="" entireclass="0" divisiontag="2" studentcount=""/>
+      <group id="B16A5410751D5094" name="Kızlar" classid="61DF2FE02CEB2E22" studentids="" entireclass="0" divisiontag="2" studentcount=""/>
+      <group id="8DD6E4D7C5968A8A" name="Bütün Sınıf" classid="BABF78EA87A9B302" studentids="" entireclass="1" divisiontag="0" studentcount=""/>
+      <group id="284E87192AEEDF6A" name="Grup 1" classid="BABF78EA87A9B302" studentids="" entireclass="0" divisiontag="1" studentcount=""/>
+      <group id="FC63B7A900DE0D2D" name="Grup 2" classid="BABF78EA87A9B302" studentids="" entireclass="0" divisiontag="1" studentcount=""/>
+      <group id="262DC64DE378EF6D" name="Erkekler" classid="BABF78EA87A9B302" studentids="" entireclass="0" divisiontag="2" studentcount=""/>
+      <group id="0F4AAFD225B35BFB" name="Kızlar" classid="BABF78EA87A9B302" studentids="" entireclass="0" divisiontag="2" studentcount=""/>
+      <group id="54D809BFA4C69B06" name="Bütün Sınıf" classid="4D6565386D68C488" studentids="" entireclass="1" divisiontag="0" studentcount=""/>
+      <group id="33367575B8B71E03" name="Grup 1" classid="4D6565386D68C488" studentids="" entireclass="0" divisiontag="1" studentcount=""/>
+      <group id="7B8E24C91C2A775F" name="Grup 2" classid="4D6565386D68C488" studentids="" entireclass="0" divisiontag="1" studentcount=""/>
+      <group id="E12F3CA23B944E3C" name="Erkekler" classid="4D6565386D68C488" studentids="" entireclass="0" divisiontag="2" studentcount=""/>
+      <group id="446D8278A42B7201" name="Kızlar" classid="4D6565386D68C488" studentids="" entireclass="0" divisiontag="2" studentcount=""/>
+      <group id="B132CD80A6C09033" name="Bütün Sınıf" classid="E1C8908A2CD9EE2E" studentids="" entireclass="1" divisiontag="0" studentcount=""/>
+      <group id="41172A5D0F59396F" name="Grup 1" classid="E1C8908A2CD9EE2E" studentids="" entireclass="0" divisiontag="1" studentcount=""/>
+      <group id="15345AECE5886734" name="Grup 2" classid="E1C8908A2CD9EE2E" studentids="" entireclass="0" divisiontag="1" studentcount=""/>
+      <group id="8739CCE72557014C" name="Erkekler" classid="E1C8908A2CD9EE2E" studentids="" entireclass="0" divisiontag="2" studentcount=""/>
+      <group id="E3607758753BC002" name="Kızlar" classid="E1C8908A2CD9EE2E" studentids="" entireclass="0" divisiontag="2" studentcount=""/>
+      <group id="C271EB678F0641F1" name="Bütün Sınıf" classid="41BBF0D08B2B5F64" studentids="" entireclass="1" divisiontag="0" studentcount=""/>
+      <group id="8B2FC31A7DE0CF43" name="Grup 1" classid="41BBF0D08B2B5F64" studentids="" entireclass="0" divisiontag="1" studentcount=""/>
+      <group id="9532849B36B52126" name="Grup 2" classid="41BBF0D08B2B5F64" studentids="" entireclass="0" divisiontag="1" studentcount=""/>
+      <group id="74D47C8E946AFCD5" name="Erkekler" classid="41BBF0D08B2B5F64" studentids="" entireclass="0" divisiontag="2" studentcount=""/>
+      <group id="EA87A1A8AD3F4529" name="Kızlar" classid="41BBF0D08B2B5F64" studentids="" entireclass="0" divisiontag="2" studentcount=""/>
+      <group id="CC1EB9900B3092AB" name="Bütün Sınıf" classid="39EB725835FD70B8" studentids="" entireclass="1" divisiontag="0" studentcount=""/>
+      <group id="79A30DD1AF91D18B" name="Grup 1" classid="39EB725835FD70B8" studentids="" entireclass="0" divisiontag="1" studentcount=""/>
+      <group id="2B7303E5EA0216B0" name="Grup 2" classid="39EB725835FD70B8" studentids="" entireclass="0" divisiontag="1" studentcount=""/>
+      <group id="12291B677549D025" name="Erkekler" classid="39EB725835FD70B8" studentids="" entireclass="0" divisiontag="2" studentcount=""/>
+      <group id="7191A66FFFDFDE8B" name="Kızlar" classid="39EB725835FD70B8" studentids="" entireclass="0" divisiontag="2" studentcount=""/>
+      <group id="4547C1A23275C009" name="Bütün Sınıf" classid="80714E39CA4E4260" studentids="" entireclass="1" divisiontag="0" studentcount=""/>
+      <group id="63AF009D448F08E8" name="Grup 1" classid="80714E39CA4E4260" studentids="" entireclass="0" divisiontag="1" studentcount=""/>
+      <group id="BC5A010EB0668109" name="Grup 2" classid="80714E39CA4E4260" studentids="" entireclass="0" divisiontag="1" studentcount=""/>
+      <group id="3583C7D683291E83" name="Erkekler" classid="80714E39CA4E4260" studentids="" entireclass="0" divisiontag="2" studentcount=""/>
+      <group id="A3525B64125EDF5A" name="Kızlar" classid="80714E39CA4E4260" studentids="" entireclass="0" divisiontag="2" studentcount=""/>
+      <group id="C2571D4A31EE7223" name="Bütün Sınıf" classid="502997282577A77C" studentids="" entireclass="1" divisiontag="0" studentcount=""/>
+      <group id="B4DC3D11F5A7F539" name="Grup 1" classid="502997282577A77C" studentids="" entireclass="0" divisiontag="1" studentcount=""/>
+      <group id="1FC98F7E07C4B18C" name="Grup 2" classid="502997282577A77C" studentids="" entireclass="0" divisiontag="1" studentcount=""/>
+      <group id="FAFADF9C0B85BD15" name="Erkekler" classid="502997282577A77C" studentids="" entireclass="0" divisiontag="2" studentcount=""/>
+      <group id="571D8A0D5B4A7BCB" name="Kızlar" classid="502997282577A77C" studentids="" entireclass="0" divisiontag="2" studentcount=""/>
+      <group id="77E69B7796FD8305" name="Bütün Sınıf" classid="50FB61276E968041" studentids="" entireclass="1" divisiontag="0" studentcount=""/>
+      <group id="8D72245BD77882D3" name="Grup 1" classid="50FB61276E968041" studentids="" entireclass="0" divisiontag="1" studentcount=""/>
+      <group id="9E9CB6810E615F5E" name="Grup 2" classid="50FB61276E968041" studentids="" entireclass="0" divisiontag="1" studentcount=""/>
+      <group id="DDFEFC4ABB3B9DC1" name="Erkekler" classid="50FB61276E968041" studentids="" entireclass="0" divisiontag="2" studentcount=""/>
+      <group id="EE3E4A9C0903B81A" name="Kızlar" classid="50FB61276E968041" studentids="" entireclass="0" divisiontag="2" studentcount=""/>
+      <group id="8CFFAD084C9941BD" name="Bütün Sınıf" classid="E82F7EDEC22D9419" studentids="" entireclass="1" divisiontag="0" studentcount=""/>
+      <group id="EB03AB729059CC57" name="Grup 1" classid="E82F7EDEC22D9419" studentids="" entireclass="0" divisiontag="1" studentcount=""/>
+      <group id="BF21602B7B8872D3" name="Grup 2" classid="E82F7EDEC22D9419" studentids="" entireclass="0" divisiontag="1" studentcount=""/>
+      <group id="225C2A2AF8FF0F4E" name="Erkekler" classid="E82F7EDEC22D9419" studentids="" entireclass="0" divisiontag="2" studentcount=""/>
+      <group id="16842422C20985CE" name="Kızlar" classid="E82F7EDEC22D9419" studentids="" entireclass="0" divisiontag="2" studentcount=""/>
+      <group id="2BF21DBF08AA1707" name="Bütün Sınıf" classid="164304DC10A65F62" studentids="" entireclass="1" divisiontag="0" studentcount=""/>
+      <group id="73E18B37B344CF5A" name="Grup 1" classid="164304DC10A65F62" studentids="" entireclass="0" divisiontag="1" studentcount=""/>
+      <group id="D71CD96045BAE48E" name="Grup 2" classid="164304DC10A65F62" studentids="" entireclass="0" divisiontag="1" studentcount=""/>
+      <group id="F3CCB7121929E7BD" name="Erkekler" classid="164304DC10A65F62" studentids="" entireclass="0" divisiontag="2" studentcount=""/>
+      <group id="EF084C6EFAC6C34B" name="Kızlar" classid="164304DC10A65F62" studentids="" entireclass="0" divisiontag="2" studentcount=""/>
+      <group id="75669CDEEC51A32A" name="Bütün Sınıf" classid="86ED5FB5FFC2E579" studentids="" entireclass="1" divisiontag="0" studentcount=""/>
+      <group id="A4FC03DF997DF59F" name="Grup 1" classid="86ED5FB5FFC2E579" studentids="" entireclass="0" divisiontag="1" studentcount=""/>
+      <group id="E7D949FB89A9E682" name="Grup 2" classid="86ED5FB5FFC2E579" studentids="" entireclass="0" divisiontag="1" studentcount=""/>
+      <group id="A023FCF7E197DAD9" name="Erkekler" classid="86ED5FB5FFC2E579" studentids="" entireclass="0" divisiontag="2" studentcount=""/>
+      <group id="41A0A497605B319B" name="Kızlar" classid="86ED5FB5FFC2E579" studentids="" entireclass="0" divisiontag="2" studentcount=""/>
+   </groups>
+   <students options="canadd,export:silent" columns="id,classid,name,number,email,mobile,partner_id,firstname,lastname"/>
+   <studentsubjects options="canadd,export:silent" columns="studentid,subjectid,seminargroup,importance,alternatefor"/>
+   <lessons options="canadd,export:silent" columns="id,subjectid,classids,groupids,teacherids,classroomids,periodspercard,periodsperweek,daysdefid,weeksdefid,termsdefid,seminargroup,capacity,partner_id">
+      <lesson id="3D4B0553B5B4DBB1" classids="6052E89F267952D6" subjectid="57D41F364AACA740" periodspercard="1" periodsperweek="1.0" teacherids="E2FECBBC706119C8" classroomids="" groupids="6D4C101615992ABC" capacity="*" seminargroup="" termsdefid="060AD68FAD9DE676" weeksdefid="4F7E3D11F0C04837" daysdefid="D7CF7191B801944B" partner_id="-99"/>
+      <lesson id="280AC89DEB90CC8D" classids="8645E0CD67EC2B6D" subjectid="6BDC1D839608067D" periodspercard="1" periodsperweek="1.0" teacherids="05FE05FF780F02AA" classroomids="" groupids="CAC71343E73670BD" capacity="*" seminargroup="" termsdefid="060AD68FAD9DE676" weeksdefid="4F7E3D11F0C04837" daysdefid="D7CF7191B801944B" partner_id="-99"/>
+      <lesson id="95495A4789BC88AC" classids="A6659741183BA47C" subjectid="835D28E7DD2B0F33" periodspercard="1" periodsperweek="1.0" teacherids="05FE05FF780F02AA" classroomids="" groupids="AD12D78C08563701" capacity="*" seminargroup="" termsdefid="060AD68FAD9DE676" weeksdefid="4F7E3D11F0C04837" daysdefid="D7CF7191B801944B" partner_id="-99"/>
+      <lesson id="62D683253F3C9A2F" classids="9E6AD598D4508D14" subjectid="3D8E0692EBDFDF20" periodspercard="1" periodsperweek="1.0" teacherids="E2FECBBC706119C8" classroomids="" groupids="61B74DDC55707976" capacity="*" seminargroup="" termsdefid="060AD68FAD9DE676" weeksdefid="4F7E3D11F0C04837" daysdefid="D7CF7191B801944B" partner_id="-99"/>
+      <lesson id="01DD56CD8C5CD9E8" classids="61225952A4E4B40E" subjectid="FB4E4020CE100607" periodspercard="1" periodsperweek="1.0" teacherids="05FE05FF780F02AA" classroomids="" groupids="7A6AE7E69D705A11" capacity="*" seminargroup="" termsdefid="060AD68FAD9DE676" weeksdefid="4F7E3D11F0C04837" daysdefid="D7CF7191B801944B" partner_id="-99"/>
+      <lesson id="C984FA69F01C4309" classids="E525ACBBD1AB3033" subjectid="F665A53F913B7C7C" periodspercard="1" periodsperweek="1.0" teacherids="E2FECBBC706119C8" classroomids="" groupids="E813CA8547EE2B98" capacity="*" seminargroup="" termsdefid="060AD68FAD9DE676" weeksdefid="4F7E3D11F0C04837" daysdefid="D7CF7191B801944B" partner_id="-99"/>
+      <lesson id="596BC855E0A44827" classids="CC103D3BF76472DC" subjectid="E3545D2766D3F102" periodspercard="1" periodsperweek="1.0" teacherids="E2FECBBC706119C8" classroomids="" groupids="FBB39DA439E106DB" capacity="*" seminargroup="" termsdefid="060AD68FAD9DE676" weeksdefid="4F7E3D11F0C04837" daysdefid="D7CF7191B801944B" partner_id="-99"/>
+      <lesson id="0EBE0964293EC765" classids="F24CDB97D4182517" subjectid="1D024257CC8FFAF7" periodspercard="1" periodsperweek="1.0" teacherids="E2FECBBC706119C8" classroomids="" groupids="961318E7D1A3540D" capacity="*" seminargroup="" termsdefid="060AD68FAD9DE676" weeksdefid="4F7E3D11F0C04837" daysdefid="D7CF7191B801944B" partner_id="-99"/>
+      <lesson id="7F97E2CB2DA79C30" classids="4CAB5B050083EF27" subjectid="08C8B070AD6C6533" periodspercard="1" periodsperweek="1.0" teacherids="05FE05FF780F02AA" classroomids="" groupids="A659726D138BA66B" capacity="*" seminargroup="" termsdefid="060AD68FAD9DE676" weeksdefid="4F7E3D11F0C04837" daysdefid="D7CF7191B801944B" partner_id="-99"/>
+      <lesson id="308E450123DDEDEC" classids="B2A8608F39E5944D" subjectid="7AC3CCC7D466A50F" periodspercard="1" periodsperweek="1.0" teacherids="E2FECBBC706119C8" classroomids="" groupids="FE408639FFAEF759" capacity="*" seminargroup="" termsdefid="060AD68FAD9DE676" weeksdefid="4F7E3D11F0C04837" daysdefid="D7CF7191B801944B" partner_id="-99"/>
+      <lesson id="BC694B5FFF8FF9AC" classids="4BFAE4E4AB75F8F3" subjectid="57D41F364AACA740" periodspercard="1" periodsperweek="1.0" teacherids="05FE05FF780F02AA" classroomids="" groupids="22B2DCCD0FD352C0" capacity="*" seminargroup="" termsdefid="060AD68FAD9DE676" weeksdefid="4F7E3D11F0C04837" daysdefid="D7CF7191B801944B" partner_id="-99"/>
+      <lesson id="B0DED7A9A4E98370" classids="D8196BCDA33D0A7A" subjectid="57D41F364AACA740" periodspercard="1" periodsperweek="1.0" teacherids="E2FECBBC706119C8" classroomids="" groupids="422DDB925FBAAC41" capacity="*" seminargroup="" termsdefid="060AD68FAD9DE676" weeksdefid="4F7E3D11F0C04837" daysdefid="D7CF7191B801944B" partner_id="-99"/>
+      <lesson id="60A62D34335054FB" classids="DB8B248E773E9D99" subjectid="57D41F364AACA740" periodspercard="1" periodsperweek="1.0" teacherids="05FE05FF780F02AA" classroomids="" groupids="200F2AAB0F7622E0" capacity="*" seminargroup="" termsdefid="060AD68FAD9DE676" weeksdefid="4F7E3D11F0C04837" daysdefid="D7CF7191B801944B" partner_id="-99"/>
+      <lesson id="5FEDF23D6C7577B6" classids="6052E89F267952D6" subjectid="029AF4C579D63B1F" periodspercard="1" periodsperweek="6.0" teacherids="4DB0CEEC6085CD6A" classroomids="" groupids="6D4C101615992ABC" capacity="*" seminargroup="" termsdefid="060AD68FAD9DE676" weeksdefid="4F7E3D11F0C04837" daysdefid="D7CF7191B801944B" partner_id="-99"/>
+   </lessons>
+   <cards options="canadd,export:silent" columns="lessonid,period,days,weeks,terms,classroomids">
+      <card lessonid="3D4B0553B5B4DBB1" classroomids="" period="2" weeks="1" terms="1" days="00100"/>
+      <card lessonid="280AC89DEB90CC8D" classroomids="" period="9" weeks="1" terms="1" days="10000"/>
+      <card lessonid="95495A4789BC88AC" classroomids="" period="7" weeks="1" terms="1" days="00100"/>
+      <card lessonid="62D683253F3C9A2F" classroomids="" period="3" weeks="1" terms="1" days="00010"/>
+      <card lessonid="01DD56CD8C5CD9E8" classroomids="" period="4" weeks="1" terms="1" days="00010"/>
+      <card lessonid="C984FA69F01C4309" classroomids="" period="8" weeks="1" terms="1" days="10000"/>
+      <card lessonid="596BC855E0A44827" classroomids="" period="4" weeks="1" terms="1" days="00100"/>
+      <card lessonid="0EBE0964293EC765" classroomids="" period="2" weeks="1" terms="1" days="10000"/>
+      <card lessonid="7F97E2CB2DA79C30" classroomids="" period="1" weeks="1" terms="1" days="00001"/>
+      <card lessonid="308E450123DDEDEC" classroomids="" period="5" weeks="1" terms="1" days="00010"/>
+      <card lessonid="BC694B5FFF8FF9AC" classroomids="" period="6" weeks="1" terms="1" days="00100"/>
+      <card lessonid="B0DED7A9A4E98370" classroomids="" period="1" weeks="1" terms="1" days="10000"/>
+      <card lessonid="60A62D34335054FB" classroomids="" period="6" weeks="1" terms="1" days="00010"/>
+      <card lessonid="5FEDF23D6C7577B6" classroomids="" period="5" weeks="1" terms="1" days="00100"/>
+      <card lessonid="5FEDF23D6C7577B6" classroomids="" period="1" weeks="1" terms="1" days="00010"/>
+      <card lessonid="5FEDF23D6C7577B6" classroomids="" period="4" weeks="1" terms="1" days="00100"/>
+      <card lessonid="5FEDF23D6C7577B6" classroomids="" period="1" weeks="1" terms="1" days="10000"/>
+      <card lessonid="5FEDF23D6C7577B6" classroomids="" period="1" weeks="1" terms="1" days="00001"/>
+      <card lessonid="5FEDF23D6C7577B6" classroomids="" period="5" weeks="1" terms="1" days="01000"/>
+   </cards>
+</timetable>

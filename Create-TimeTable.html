@@ -1,0 +1,193 @@
+{% extends 'base.html' %}
+
+{% block title %}{% trans "Time Table" %}{% endblock title %}
+
+{% block content %}
+     {% block top_head %}
+        <script src="{% static 'assets/js/sweetalert2@9.js' %}"></script>
+    {% endblock %}
+
+     {% block bottom_head %}
+          <link rel="stylesheet" href="{% static 'assets/css/multiselect/bootstrap-select.min.css' %}">
+          <link rel="stylesheet" href="{% static 'assets/css/multiselect/select2.min.css' %}">
+          <script src="{% static 'assets/js/jquery-3.2.1.min.js' %}"></script>
+          <script src="{% static 'assets/js/sweetalert2@9.js' %}"></script>
+     {% endblock bottom_head %}
+
+     <div class="page-wrapper"><!-- Page wrapper  -->
+          <div class="container-fluid"><!-- Container fluid  -->
+               <div class="row m-t-10">
+                    <div class="col-md-2">
+                         <div class="card">
+                              <div class="card-body">
+                                   <form method=POST enctype="multipart/form-data">                                      
+                                        {% csrf_token %}
+                                        <div class="container">
+                                             <div class="row">
+                                                  <div class="col text-center"> 
+                                                       <label class="btn btn-info btn-rounded btn-sm ct-label-min-title text-light" for="xml_file">{% trans 'Insert Time Table' %}</label>
+                                                       <input type="file" id="xml_file" name="xml_file" name="insert" value="action" class="btn btn-info btn-rounded btn-sm" style="display:none" accept=".xml" onchange="this.form.submit();"/>
+                                                  </div>
+                                             </div>
+                                        </div>   
+                                   </form>
+                              </div>
+                         </div>
+                         <div class="card">
+                              <div class="card-body">
+                                  <form method='GET'>
+                                    {% csrf_token %}
+                                    <div class="form-group m-b-15">
+                                        <label class='ct-label-title nopadding'> {% trans 'Select Class' %}</label>
+                                        <select class="selectpicker form-control ct-label-min-title"  data-style="btn-info btn-outline-info" name='class_uuid' data-live-search="true">
+                                            <option  selected="selected" disabled>{% trans '-----' %}</option>
+                                            {% for Class in Class_List %}
+                                                <option  class='text-navy'  value="{{ Class.uuid}}">{{ Class.class_year }}{{ Class.class_name }} {% if Class.class_year > 8 %}{{Class.class_branch }} {%endif%}</option>  
+                                            {% endfor %}
+                                        </select>
+                                    </div>
+
+                                    <div class="button-box m-t-20">
+                                      <div class="row">
+                                          <div class="col text-center  p-1">
+                                              <button type="submit" name='action' value='show' class="btn btn-rounded  btn-sm btn-outline-info"><i class="fa fa-check"> </i> {% trans "Show" %}</button>
+                                          </div>
+                                      </div>
+                                  </div>
+                                </form>
+                              </div>
+                              
+                          </div>
+                          
+                    </div>
+
+                    <div class="col-md-10">
+                         <div class="card">
+                              <div class="card-header">{% trans "Time Table" %}</div>
+                              <div class="card-body">
+                                   <form role="form" method="POST">
+                                        {% csrf_token %}
+                                        <input type="hidden" name='class_uuid' value='{{Class_Object.uuid}}'>
+                                        <table class="table table-bordered table-striped">
+                                             <thead>
+                                                  <tr><th colspan=10 class='ct-label-title text-center'>{{Class_Object.semester.year }} {{Class_Object.class_year}}{{Class_Object.class_name}} {%if Class_Object.class_year > 8%}  {{Class_Object.class_branch}}{%endif%}  {% trans 'Time Table' %}</th></tr>
+                                                  <tr>
+                                                  <th class='ct-label-mid-title text-center'>{% trans 'Lesson Hour' %}</th>
+                                                  <th class='ct-label-mid-title text-center'>{% trans 'Monday' %}</th>
+                                                  <th class='ct-label-mid-title text-center'>{% trans 'Tuesday' %}</th>
+                                                  <th class='ct-label-mid-title text-center'>{% trans 'Wednesday' %}</th>
+                                                  <th class='ct-label-mid-title text-center'>{% trans 'Thursday' %}</th>
+                                                  <th class='ct-label-mid-title text-center'>{% trans 'Friday' %}</th>
+                                                  </tr>
+                                             </thead>
+                                             <tbody>
+                                                  {%for timetable in timetable_data%}
+                                                       <tr>
+                                                            <td class = 'ct-label-mid-title text-center' width='10%'>{{timetable.0.lessonhour}}</td>
+                                                            <td class = 'ct-label-mid-title text-center' width='10%'>
+                                                                 <select class="selectpicker form-control ct-label" style="width: 100%" name="Timetable_{{forloop.counter0}}">
+                                                                      <option  value='-' selected>{% trans '-----' %}</option>
+                                                                      {% for Course in Course_object_List %}
+                                                                           {% if Course == timetable.1.course%}
+                                                                                <option value="{{ Course.uuid }}" selected>{{ Course.course_code }} {% if request.LANGUAGE_CODE == "tr" %}{{ Course.course_local_name }}{%else%}{{ Course.course_foreign_name }}{%endif%}</option>
+                                                                           {% else %}
+                                                                                <option value="{{ Course.uuid }}">{{ Course.course_code }} {% if request.LANGUAGE_CODE == "tr" %}{{ Course.course_local_name }}{%else%}{{ Course.course_foreign_name }}{%endif%}</option>
+                                                                           {% endif %}
+                                                                      {% endfor %}
+                                                                 </select>
+                                                            </td>
+
+                                                            <td class = 'ct-label-mid-title text-center' width='10%'>
+                                                                 <select class="selectpicker form-control ct-label" style="width: 100%" name="Timetable_{{forloop.counter0}}">
+                                                                      <option  value='-' selected>{% trans '-----' %}</option>
+                                                                      {% for Course in Course_object_List %}
+                                                                           {% if Course == timetable.2.course%}
+                                                                                <option value="{{ Course.uuid }}" selected>{{ Course.course_code }} {% if request.LANGUAGE_CODE == "tr" %}{{ Course.course_local_name }}{%else%}{{ Course.course_foreign_name }}{%endif%}</option>
+                                                                           {% else %}
+                                                                                <option value="{{ Course.uuid }}">{{ Course.course_code }} {% if request.LANGUAGE_CODE == "tr" %}{{ Course.course_local_name }}{%else%}{{ Course.course_foreign_name }}{%endif%}</option>
+                                                                           {% endif %}
+                                                                      {% endfor %}
+                                                                 </select>
+                                                            </td>
+
+                                                            <td class = 'ct-label-mid-title text-center' width='10%'>
+                                                                 <select class="selectpicker form-control ct-label" style="width: 100%" name="Timetable_{{forloop.counter0}}">
+                                                                      <option  value='-' selected>{% trans '-----' %}</option>
+                                                                      {% for Course in Course_object_List %}
+                                                                           {% if Course == timetable.3.course%}
+                                                                                <option value="{{ Course.uuid }}" selected>{{ Course.course_code }} {% if request.LANGUAGE_CODE == "tr" %}{{ Course.course_local_name }}{%else%}{{ Course.course_foreign_name }}{%endif%}</option>
+                                                                           {% else %}
+                                                                                <option value="{{ Course.uuid }}">{{ Course.course_code }} {% if request.LANGUAGE_CODE == "tr" %}{{ Course.course_local_name }}{%else%}{{ Course.course_foreign_name }}{%endif%}</option>
+                                                                           {% endif %}
+                                                                      {% endfor %}
+                                                                 </select>
+                                                            </td>
+
+                                                            <td class = 'ct-label-mid-title text-center' width='10%'>
+                                                                 <select class="selectpicker form-control ct-label" style="width: 100%" name="Timetable_{{forloop.counter0}}">
+                                                                      <option  value='-' selected>{% trans '-----' %}</option>
+                                                                      {% for Course in Course_object_List %}
+                                                                           {% if Course == timetable.4.course%}
+                                                                                <option value="{{ Course.uuid }}" selected>{{ Course.course_code }} {% if request.LANGUAGE_CODE == "tr" %}{{ Course.course_local_name }}{%else%}{{ Course.course_foreign_name }}{%endif%}</option>
+                                                                           {% else %}
+                                                                                <option value="{{ Course.uuid }}">{{ Course.course_code }} {% if request.LANGUAGE_CODE == "tr" %}{{ Course.course_local_name }}{%else%}{{ Course.course_foreign_name }}{%endif%}</option>
+                                                                           {% endif %}
+                                                                      {% endfor %}
+                                                                 </select>
+                                                            </td>
+
+                                                            <td class = 'ct-label-mid-title text-center' width='10%'>
+                                                                 <select class="selectpicker form-control ct-label" style="width: 100%" name="Timetable_{{forloop.counter0}}">
+                                                                      <option  value='-' selected>{% trans '-----' %}</option>
+                                                                      {% for Course in Course_object_List %}
+                                                                           {% if Course == timetable.5.course%}
+                                                                                <option value="{{ Course.uuid }}" selected>{{ Course.course_code }} {% if request.LANGUAGE_CODE == "tr" %}{{ Course.course_local_name }}{%else%}{{ Course.course_foreign_name }}{%endif%}</option>
+                                                                           {% else %}
+                                                                                <option value="{{ Course.uuid }}">{{ Course.course_code }} {% if request.LANGUAGE_CODE == "tr" %}{{ Course.course_local_name }}{%else%}{{ Course.course_foreign_name }}{%endif%}</option>
+                                                                           {% endif %}
+                                                                      {% endfor %}
+                                                                 </select>
+                                                            </td>
+                                                       </tr>
+                                                  {%endfor%}
+                                             </tbody>
+                                        </table>
+                                        {%if timetable_data %}
+                                        <div class="button-box m-t-20">
+                                             <div class="row">
+                                                  <div class="col-auto offset-4">
+                                                       <button type="submit" class="btn btn-sm btn-rounded  btn-outline-info"><i class="fa fa-check"> </i> {% trans "Save" %}</button>
+                                                       <button type="button" class="btn btn-sm btn-rounded  btn-outline-warning" onClick="window.location.reload();"> <i class="fas fa-undo-alt"> </i> {% trans "Cancel" %}</button>
+                                                  </div>
+                                             </div>
+                                        </div>
+                                        {% endif %}
+                                   </form>
+                              </div>
+                         </div>
+                    </div>
+               </div>
+          </div><!-- End Container fluid  -->
+      </div>
+      {% if Time_Table_Data %}   
+          <script>
+               Swal.fire({
+                    position: 'center',
+                    icon: 'success',
+                    title: "{% trans 'Operation Successful' %}",
+                    html: "<div class='ct-label-title'> {% trans 'Timetable has been saved. Please choose class to check the Timetable' %}</div>",
+                    showConfirmButton: true,
+                    })
+          </script>
+          
+     {% endif %}
+                   <!-- End Page wrapper  -->
+{% endblock content %}
+
+{% block bottom_scr %}
+    <script src="{% static 'assets/js/multiselect/bootstrap-select.min.js' %}"></script>
+    <script src="{% static 'assets/js/multiselect/select2.full.min.js' %}"></script>
+    <script>
+        $('.selectpicker').selectpicker({noneSelectedText : "{% trans 'Select Student' %}" });        
+    </script>
+{% endblock bottom_scr %}

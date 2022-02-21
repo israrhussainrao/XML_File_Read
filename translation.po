@@ -1,0 +1,14 @@
+msgid "Time Table"
+msgstr "Ders-Zaman Tablosu"
+
+msgid "Import Time Table"
+msgstr "Ders-Zaman Tablosu Ekle"
+
+msgid "Insert Time Table"
+msgstr "Ders-Zaman kaydet"
+
+msgid "Operation Successful"
+msgstr "İşlem Başarılı" 
+
+msgid "Timetable has been saved. Please choose class to check the Timetable"
+msgstr "Ders-Zaman Tablosu kaydedildi. Lütfen Ders-Zaman kontrol etmek için bir sınıf seçin" 
